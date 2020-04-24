@@ -1,0 +1,174 @@
+@media screen and (max-width: 599px){
+.city{
+    /*min-height: 500px;*/
+   /* height: 100%;*/
+    background: #7109AA no-repeat;
+}}
+@media screen and (min-width: 600px){
+    .city{
+        height: 100%;
+        /*background: url("../photo/fon3.jpg") no-repeat;*/
+    }
+}
+body {
+    margin: 0px;
+    background: linear-gradient(3rad, #8012aa, #D8F800);
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    color: #D8F800;
+    font-family: 'Baloo Da 2', cursive;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    text-shadow: black 3px 3px 3px;
+}
+
+.container {
+    /*background: url("/photo/71137.jpg");*/
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+
+.form {
+    width: 240px;
+    background: linear-gradient(#c561d3,#D8F800);
+    border-radius: 30px;
+    box-shadow: black 2px 2px 0;
+    margin-bottom: 20px;
+}
+.form:hover{
+    background: linear-gradient( #D8F800,#c561d3);
+}
+.addcity,
+.input1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.inp {
+    text-shadow: black 2px 2px 0;
+    height: auto;
+    width: 120px;
+    border-radius: 30px;
+    text-align: center;
+    margin-left: 70px;
+    background: linear-gradient(#c561d3, #D8F800);
+    box-shadow: black 2px 2px 0;
+}
+
+.inp:hover {
+    cursor: pointer;
+    background: linear-gradient(#D8F800, #c561d3);
+}
+
+select {
+    height: 40px;
+    background: #EAFC71;
+}
+
+.inp1{
+    box-shadow: black 2px 2px 0;
+    justify-content: center;
+    width: 240px;
+    height: 30px;
+    background: linear-gradient(#D8F800, #c561d3);
+    margin: 10px;
+    border-radius: 5px;
+}
+.inp1:hover{
+    background: linear-gradient(#c561d3, #D8F800);
+}
+/*кнопка регистрации*/
+.btn{
+    box-shadow: black 2px 2px 0;
+    text-shadow: black 2px 2px 0;
+    width: 135px;
+    /*height: auto;*/
+    margin-left: 70px;
+    margin-top:  30px;
+    margin-bottom: 150px;
+    border-radius: 30px;
+    background: linear-gradient(#D8F800, #c561d3);
+}
+.btn:hover{
+    cursor: pointer;
+    background: linear-gradient(#c561d3, #D8F800);
+}
+/*размещение оъявления*/
+.adsbtn{
+    box-shadow: black 2px 2px 0;
+    text-shadow: black 2px 2px 0;
+    width: 120px;
+    height: auto;
+    margin-left: 118px;
+    border-radius: 30px;
+    background: linear-gradient(#c561d3,#D8F800);
+}
+.adsbtn:hover{
+    cursor: pointer;
+    background: linear-gradient(#D8F800, #c561d3);
+}
+.section{
+    width: 240px;
+    background: linear-gradient(#c561d3,#D8F800);
+    border-radius: 30px;
+    box-shadow: black 2px 2px 0;
+    margin-bottom: 20px;
+    margin-left: 60px;
+}
+.section:hover{
+    cursor: pointer;
+    background: linear-gradient(#D8F800, #c561d3);
+}
+.area{
+    background: linear-gradient(#D8F800,#c561d3);
+    border-radius: 10px;
+    box-shadow: black 2px 2px 0;
+    margin-bottom: 20px;
+    margin-left: 62px;
+}
+/*#inputfile{*/
+    /*display: inline-block;*/
+/*}*/
+.photo{
+    /*opacity: 0;*/
+    background: linear-gradient(#D8F800,#c561d3);
+    border-radius: 30px;
+    box-shadow: black 2px 2px 0;
+    margin-bottom: 20px;
+    margin-left: 62px;
+    width: 239px;
+}
+.tel{
+    /*opacity: 0;*/
+    background: linear-gradient(#D8F800,#c561d3);
+    border-radius: 30px;
+    margin-bottom: 20px;
+    width: 166px;
+    margin-left: 95px;
+}
+.tele{
+    margin-left: 15px;
+}
+.address{
+    background: linear-gradient(#D8F800,#c561d3);
+    border-radius: 30px;
+    box-shadow: black 2px 2px 0;
+    margin-bottom: 20px;
+    margin-left: 62px;
+    width: 239px;
+    height: 30px;
+}
+.address:hover {
+    cursor: pointer;
+    background: linear-gradient(#c561d3,#D8F800);
+}
+.form1{
+    border-radius: 30px;
+}

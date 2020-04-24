@@ -1,0 +1,42 @@
+body{
+    background: linear-gradient(3rad, #8012aa, #D8F800) no-repeat;
+    margin: 0;
+}
+.feed{
+    /*border: 2px solid aqua;*/
+    display: flex;
+    justify-content: space-around;
+    min-height: 770px;
+} 
+.feed2 {
+    /*border: 2px solid aqua;*/
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 15px;
+	/*margin-left: 80px;*/
+}
+#submit{
+    width: 130px;
+    margin-left: 25%;
+    border-radius: 15px;
+    height: 25px;
+	font-size: 15px;
+	text-shadow: 1px 1px 1px black;
+    background: linear-gradient(#ce59f7, #D8F800) no-repeat;
+    box-shadow: 1px 1px 3px black;
+}
+#submit:active{
+    background: linear-gradient(#D8F800, #ce59f7) no-repeat;
+    box-shadow: inset 2px 2px 5px black;
+}
+#send:active{
+    color: #dd93e6;
+}
+#email,#message{
+	padding-left: 10px;
+	box-shadow: #e6e5f0 0px 1px 2px, #e6e5f0 0px -1px 2px,inset 1px 1px 1px #b80ef1,inset -1px -1px 1px #b80ef1;
+    min-width: 240px;
+    border-radius: 15px;
+    background: #f6d0fa;
+    margin-bottom: 15px;
+}

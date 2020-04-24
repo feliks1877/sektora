@@ -1,0 +1,12 @@
+#footer{
+	/*display: table-footer-group;*/
+    position: absolute;
+	bottom: -6%;
+    background: #9C27B0;
+    height: 55px;
+    width: 100%;
+    transform: translateY(117px);
+    color: yellow;
+    padding-top: 6px;
+    text-align: center;
+}

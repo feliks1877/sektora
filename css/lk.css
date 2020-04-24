@@ -1,0 +1,88 @@
+h2, h3, h4, h5, h6, p {
+    color: #f8d63c !important;
+    font-family: 'Baloo Da 2', cursive;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    text-shadow: black 1px 1px 3px !important;
+}
+
+button {
+    /*margin-left: 36%;*/
+    width: 100px;
+    border-radius: 20px;
+    height: 25px;
+    background: linear-gradient(#ce59f7, #D8F800) no-repeat;
+    box-shadow: 2px 2px 5px black;
+}
+@media screen and (min-width: 600px){
+
+    button {
+        /*margin-left: 45%;*/
+        width: 115px;
+        border-radius: 20px;
+        height: 30px;
+        background: linear-gradient(#ce59f7, #D8F800) no-repeat;
+        box-shadow: 2px 2px 5px black;
+    }
+}
+button:active {
+    background: linear-gradient(#D8F800, #ce59f7) no-repeat;
+    box-shadow: inset 2px 2px 5px black;
+}
+
+body {
+    background: linear-gradient(3rad, #8012aa, #D8F800);
+    margin: 0;
+    min-height: 1200px;
+    display: flex;
+    /*justify-content: space-around;*/
+    flex-direction: column;
+    flex-wrap: wrap;
+    /*align-items: stretch;*/
+    text-align: center;
+}
+
+.object {
+    background: #f6d0fa;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-width: 360px;
+    width: auto;
+    height: auto;
+    margin: 5px;
+    border: 3px solid #fffc63;
+    border-radius: 10px;
+}
+
+
+p {
+    color: #4d4bff !important;
+    text-shadow: none !important;
+}
+
+a{
+    text-decoration: none;
+    color: #f8ee22;
+    text-shadow: 1px 1px 2px black;
+}
+#opads{
+    margin: 0 10px 0 10px;
+    display: flex;
+	flex-direction: row;
+    justify-content: space-around;
+}
+.objectbutton{
+	margin-top: 7px;
+	margin-bottom: 3px;
+    align-self: flex-end;
+}
+#btn2,
+#btn1{
+    width: 63px;
+    height: 20px;
+    font-size: 9px;
+    box-shadow: none;
+    margin-left: 8px;
+    margin-right: 7px;
+}

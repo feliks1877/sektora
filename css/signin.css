@@ -1,0 +1,73 @@
+
+@media screen and (max-width: 599px){
+    html{
+        background: url("../photo/fon1.jpg");
+    }
+}
+@media screen and (min-width: 600px){
+    html{
+        background: linear-gradient(3rad, #8012aa, #D8F800) no-repeat;
+        /*height: 1100px;*/
+    }
+}
+body{
+    margin: 0px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-around;*/
+    align-items: center;
+}
+div.signin{
+    /*border: 2px solid aqua;*/
+    width: 225px;
+}
+a{
+	text-decoration: none;
+}
+.inp1,
+.inp1:focus,
+.inp1:active{
+    padding-left: 20px;
+    outline: none;
+    background-color: #f6d0fa;
+    border-radius: 25px;
+    box-shadow: #e6e5f0 0px 1px 2px, #e6e5f0 0px -1px 2px,inset 1px 1px 1px #b80ef1,inset -1px -1px 1px #b80ef1;
+    height: 30px;
+    min-width: 200px;
+}
+
+button{
+    text-align: center;
+    background: linear-gradient( #ec59f1, #D8F800) no-repeat;
+    height: 30px;
+    width: 125px;
+    box-shadow: 1px 1px 3px #b80ef1,  -1px -1px 3px #b80ef1,inset 2px 2px 1px #ffb6fc,
+    inset -2px -2px 1px #ffb6fc;
+    border-radius: 25px;
+    margin: 20px 0 0 60px;
+}
+button:active,
+button:focus{
+    transform: scale(0.98);
+    outline: none;
+    box-shadow: inset 1px 1px 3px black, inset -1px -1px 3px  black;
+}
+span{
+    content: "Добро пожаловать";
+    font-size: 13px;
+    color: #ffe547;
+    text-shadow: 1px 1px 0 black;
+    font-family: 'Baloo Da 2', cursive;
+    font-family: 'Comfortaa', cursive;
+}
+span:active{
+    display: none;
+}
+button:active::before{
+    content: "Добро пожаловать";
+    font-size: 9px;
+    color: #ffe547;
+    text-shadow: 1px 1px 0 black;
+    font-family: 'Baloo Da 2', cursive;
+    font-family: 'Comfortaa', cursive;
+}

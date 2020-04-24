@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One&display=swap');
+
+.iconlk {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    border-radius: 7px;
+    /*box-shadow: 2px 2px 6px black;*/
+    width: 30px;
+    height: 30px;
+}
+.iconlk:active{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    /*border-radius: 5px;*/
+    /*box-shadow: inset 1px 1px 5px black,inset -1px -1px 5px black;*/
+    width: 30px;
+    height: 30px;
+    /*transform: scale(0.9);*/
+
+}
+
+header {
+    /*position: relative;*/
+    top: 100%;
+    width: 100%;
+    display: flex;
+	flex-direction: row;
+    background: #c41af0;
+    background-size: 40px;
+    height: 70px;
+    text-align: center !important;
+    /*text-shadow: #f8eb49 0px 0px 15px;*/
+}
+
+
+h1, h2, h3, h4, h5, h6, p {
+    color: #ffe649;
+    font-family: 'Baloo Da 2', cursive;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    text-align: center;
+
+}
+h1#sek{
+	float: right;
+}
+input#sub{
+    display: none;
+}
+img.icon{
+    position: fixed;
+    /*z-index: 1;*/
+    height: 30px;
+    width: 30px;
+    top: 20px;
+    left: 10px;
+}
+#sub:checked~.icon{
+    display: none;
+}
+div.submenu{
+    position: absolute;
+	z-index: 5; 
+    overflow: hidden;
+    height: 900px;
+    margin-top: 70px;
+    margin-left: -100%;
+    max-width: 230px;
+    transition: 1s;
+    /*box-shadow: 5px -1px 5px 0px black,inset -1px 1px 2px 0px #fffafe,inset -1px 1px 3px 1px #9fa1f1;*/
+    background: #c41af0;
+    font-family: 'Baloo Da 2', cursive;
+    font-family: 'Comfortaa', cursive;
+    font-size: 15px;
+}
+
+#sub:checked~div.submenu{
+	
+    margin-left: 0%;
+    transition: 0.5s;
+}
+#zagolovok{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+#icon2{
+    display: none;
+}
+#sub:checked~#icon2{
+    position: absolute;
+    transition: 0.5s;
+    display: block;
+}
+.saidbar{
+    text-align: left !important;
+    padding-bottom: 10px;
+    text-shadow: 1px 1px 1px black;
+    color: #f9fa60;
+    text-decoration: none;
+}
+#liMenu{
+    height: 20px;
+    width: 200px;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: -40px;
+    margin-bottom: 5px;
+    list-style-type: none;
+}
+.menu:first-child{
+    margin-top: 20px;
+}
+#liMenu:hover{
+    box-shadow: 2px 2px 2px black;
+    transform: translateX(5px) scale(1.1);
+    background: #f2f2f8;
+}
+#mail{
+    width: 15px;
+    height: 15px;
+}

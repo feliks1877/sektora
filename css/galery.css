@@ -1,0 +1,239 @@
+@media screen and (max-width: 599px) {
+    body {
+        margin: 0px;
+    }
+    .detail {
+        margin: 0px;
+        font-family: 'Baloo Da 2', cursive;
+        font-family: 'Comfortaa', cursive;
+        background: linear-gradient(95rad, #fceb24, #c41df1);
+        /*background: #f6d0fa;*/
+    }
+
+    .name{
+        /*border: 2px solid #e64343;*/
+        font-size: 20px;
+        padding: 10px;
+        color: #f6f5f8;
+        text-shadow: 0 0 10px black;
+        text-align: center;
+        margin-top: 20px;
+		padding-bottom: 20px;
+    }
+
+    #disk {
+		overflow: scroll;
+        box-shadow: #060205 0 0 10px 2px, inset 0 0 10px 3px;
+        /*border: 2px solid #77bee6;*/
+        font-size: 15px;
+        color: rgba(248, 246, 227, 0.98);
+        text-shadow:  0 0 10px white;
+        max-height: 400px;
+        padding: 10px 25px 25px 25px;
+        /*border-bottom: 2px solid yellow;*/
+        text-align: center;
+        border-radius: 15px;
+ 		margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+
+    .tel {
+        background: url('../photo/telep-icon.png') no-repeat 56%;
+        padding: 5px;
+        background-size: 30px;
+        overflow: hidden;
+        text-align: right;
+        color: #D8F800;
+    }
+
+    .click {
+        /*border: 2px solid black;*/
+        background: url('../photo/eyyys.png') no-repeat 80%;
+        background-size: 30px;
+        text-align: right;
+        padding: 5px;
+        color: #D8F800;
+    }
+    .address{
+        overflow: scroll;
+        text-align: right;
+        padding: 5px;
+        color: #D8F800;
+    }
+    #web{
+
+		border-radius: 15px;
+        padding: 5px;
+        color: #D8F800;
+		margin-left: 65%;
+		margin-top: 5px;
+		border: 2px solid yellow;
+    }
+	a{
+		text-decoration: none;
+		text-shadow: none;
+	}
+    .slideshow-container {
+        box-shadow: #060205 0 0 10px 2px, inset 0 0 10px 3px white;
+        border: 2px solid yellow;
+        border-radius: 15px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 150px;
+    }
+
+    img {
+        border-radius: 15px;
+        max-height: 400px;
+        width: 100%;
+    }
+
+    .numbertext {
+        right: 50%;
+    }
+
+    .next {
+        margin-left: 50%;
+    }
+
+    .prev {
+        top: 35%;
+    }
+
+    .next,
+    .prev {
+        text-shadow: 2px 2px 2px white;
+        font-size: 30px;
+        top: 30%;
+        color: rgba(255, 230, 73, 0.96);
+        text-shadow: #060205 2px 2px 4px, rgba(6, 2, 5, 0.95) -1px -1px 2px;
+    }
+
+    .prev:hover, .next:hover {
+        text-shadow: #060205 2px 2px 4px, rgba(6, 2, 5, 0.95) -1px -1px 2px;
+        font-size: 50px;
+        color: #ffe649;
+        transition: 0.7s;
+    }
+}
+@media screen and (min-width: 600px) {
+    .detail {
+        margin: 0px;
+        font-family: 'Baloo Da 2', cursive;
+        font-family: 'Comfortaa', cursive;
+        background: linear-gradient(95rad, #fceb24, #c41df1);
+        /*background: #f6d0fa;*/
+    }
+
+    .name{
+        /*border: 2px solid #e64343;*/
+        font-size: 20px;
+        padding: 10px;
+        color: #f6f5f8;
+        text-shadow: 0 0 10px black;
+        text-align: center;
+        margin-top: 20px;
+		padding-bottom: 20px;
+    }
+
+    #disk {		
+		overflow: hidden;
+		scroll-behavior: auto;
+        box-shadow: #060205 0 0 10px 2px, inset 0 0 10px 3px;
+        /*border: 2px solid #77bee6;*/
+        font-size: 15px;
+        color: rgba(248, 246, 227, 0.98);
+        text-shadow:  0 0 10px white;
+        max-height: 300px;
+        padding: 10px 25px 25px 25px;
+        /*border-bottom: 2px solid yellow;*/
+        text-align: center;
+        border-radius: 15px;
+ 		margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+
+    .tel {
+        background: url('../photo/telep-icon.png') no-repeat 83%;
+        padding: 5px;
+        background-size: 30px;
+        overflow: hidden;
+        text-align: right;
+        color: #D8F800;
+    }
+
+    .click {
+        /*border: 2px solid black;*/
+        background: url('../photo/eyyys.png') no-repeat 95%;
+        background-size: 30px;
+        text-align: right;
+        padding: 5px;
+        color: #D8F800;
+    }
+    .address{
+        text-align: right;
+        padding: 5px;
+        color: #D8F800;
+    }
+     #web{
+		border-radius: 15px;
+        padding: 5px;
+        color: #D8F800;
+		margin-left: 89%;
+		margin-top: 5px;
+		border: 2px solid yellow;
+    }
+ 
+	a{
+		text-decoration: none;
+		text-shadow: none;
+	}
+    .slideshow-container {
+        box-shadow: #060205 0 0 10px 2px, inset 0 0 10px 3px white;
+        border: 2px solid yellow;
+        border-radius: 15px;
+        text-align: center;
+        margin-top: 25px;
+		max-height: 400px;
+		max-width: 600px;
+        margin-bottom: 150px;
+		margin-left: 25%;
+		margin-right: 15%;
+    }
+
+    img {
+        border-radius: 15px;
+        max-height: 400px;
+        width: 100%;
+    }
+
+    .numbertext {
+        right: 50%;
+    }
+
+    .next {
+        margin-left: 50%;
+    }
+
+    .prev {
+        top: 35%;
+    }
+
+    .next,
+    .prev {
+        text-shadow: 2px 2px 2px white;
+        font-size: 30px;
+        top: 30%;
+        color: rgba(255, 230, 73, 0.96);
+        text-shadow: #060205 2px 2px 4px, rgba(6, 2, 5, 0.95) -1px -1px 2px;
+    }
+
+    .prev:hover, .next:hover {
+        text-shadow: #060205 2px 2px 4px, rgba(6, 2, 5, 0.95) -1px -1px 2px;
+        font-size: 50px;
+        color: #ffe649;
+        transition: 0.7s;
+    }
+}

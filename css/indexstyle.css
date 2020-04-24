@@ -1,0 +1,104 @@
+.iconlk {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    border-radius: 7px;
+    /*box-shadow: 2px 2px 6px black;*/
+    width: 33px;
+    height: 33px;
+}
+.iconlk:active{
+    position: absolute;
+	transform: scale(1.2);
+    right: 10px;
+    top: 20px;
+    /*border-radius: 5px;*/
+    /*box-shadow: inset 1px 1px 5px black,inset -1px -1px 5px black;*/
+    width: 33px;
+    height: 33px;
+}
+
+ h1,h2,h3,h4,h5,h6{
+	color: #ffe649;
+    font-family: 'Baloo Da 2', cursive;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    text-align: center;
+}
+@media screen and (max-width: 599px){
+    html{
+		background: linear-gradient(3rad, #8012aa, #D8F800) no-repeat;
+        background: url("../photo/fon1.jpg");
+    }
+}
+@media screen and (min-width: 600px){
+    html{
+    position:fixed;
+    background: linear-gradient(3rad, #8012aa, #D8F800) no-repeat;
+    height: 1500px;
+}
+}
+
+
+body{
+    margin: 0px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.city,
+.city:focus,
+.city:active{
+    outline: none;
+    background-color: #f6d0fa;
+    border-radius: 15px;
+	padding-left: 10px;
+	background: linear-gradient(#ce59f7, #D8F800) no-repeat;
+    /*border: 2px solid #b80ef1;*/
+    box-shadow: #e6e5f0 0px 1px 2px, #e6e5f0 0px -1px 2px,inset 1px 1px 1px #b80ef1,inset -1px -1px 1px #b80ef1;
+    height: 25px;
+    min-width: 200px;
+}
+option{
+    color: #c41df1;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+    font-family: 'Baloo Da 2', cursive;
+    font-family: 'Comfortaa', cursive;
+}
+span{
+    color: #ffe547;
+    text-shadow: 1px 1px 2px black;
+    font-family: 'Baloo Da 2', cursive;
+    font-family: 'Comfortaa', cursive;
+}
+button{
+    text-align: center;
+    background: linear-gradient( #ec59f1, #D8F800) no-repeat;
+    height: 30px;
+    width: 140px;
+    box-shadow: 1px 1px 3px #b80ef1,  -1px -1px 3px #b80ef1,inset 2px 2px 1px #ffb6fc,
+    inset -2px -2px 1px #ffb6fc;
+    border-radius: 15px;
+    margin: 35px 0 0 35px;
+}
+button:active,
+button:focus{
+    transform: scale(0.98);
+    transition: 0.7s;
+    outline: none;
+	background: linear-gradient(#D8F800, #ec59f1 ) no-repeat;
+    box-shadow: inset 1px 1px 3px black, inset -1px -1px 3px  black;
+}
+span:active{
+    display: none;
+}
+button:active::before{
+    content: "Добро пожаловать";
+    font-size: 9px;
+    color: #ffe547;
+    text-shadow: 1px 1px 0 black;
+    font-family: 'Baloo Da 2', cursive;
+    font-family: 'Comfortaa', cursive;
+}
