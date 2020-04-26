@@ -28,7 +28,8 @@
 @media screen and (max-width: 599px){
     html{
 		background: linear-gradient(3rad, #8012aa, #D8F800) no-repeat;
-        background: url("../photo/fon1.jpg");
+        background: url("../photo/f39.jpg")49%;
+        background-size: 390px;
     }
 }
 @media screen and (min-width: 600px){

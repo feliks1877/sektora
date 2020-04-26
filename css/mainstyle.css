@@ -1,15 +1,15 @@
 @media screen and (max-width: 640px) {
     body {
-		position: relative;
+        position: relative;
         background: linear-gradient(3rad, #8012aa, #D8F800);
         /*background: url("../photo/fon2.jpg");*/
         background-attachment: fixed;
         margin: 0px;
         margin-bottom: 20px;
-       /*margin-bottom: 150px;*/
+        /*margin-bottom: 150px;*/
     }
 
-     /*осовной блок списка объявлений*/
+    /*осовной блок списка объявлений*/
     .main {
         min-height: 600px;
         display: grid;
@@ -24,66 +24,76 @@
 
     /*список блоков объявлений*/
     /*ul*/
-    #spisok{
+    #spisok {
         margin-left: -7px;
     }
-    #spisok #element{
+
+    #spisok #element {
         margin-bottom: 30px;
     }
-    #spisok #element:last-child{
-        margin-bottom: 130px;
-         /*border: 3px solid aqua;*/
-     }
+
+    #spisok #element:last-child {
+        margin-bottom: 40px;
+        /*border: 3px solid aqua;*/
+    }
 
     /*li*/
-    #element{
+    #element {
         margin-left: -30px;
-       list-style-type: none;
+        list-style-type: none;
     }
 
     /*банер*/
     .baner {
         overflow: scroll;
-		box-shadow: 55px 0px 10px  #ffa9f8, -55px 0px 10px #ffa9f8;
-		height: 110px;
+        box-shadow: 55px 0px 10px #ffa9f8, -55px 0px 10px #ffa9f8;
+        height: 110px;
         width: 95%;
         margin-left: 8px;
-		border: 3px solid #ffa9f8;
+        border: 3px solid #ffa9f8;
         border-radius: 15px;
     }
-    .baner:active{
+
+    .baner:active {
         transform: scale(0.9);
         transition-duration: 0.5s;
     }
-	#banerimg{
-		border-radius: 14px;
-		object-fit: fill;
-		width: 47%;
-		height: 100%;
-	}
-	#textbaner{
-		text-align: center;
-		background-color: #f182ee;
-		color: #fffef2;
-		padding: 1px;
-		width: 150px;
+
+    #banerimg {
+        border-radius: 11px;
+        object-fit: fill;
+        width: 47%;
+        height: 100%;
+    }
+
+    #textbaner {
+        text-align: center;
+        background-color: #f182ee;
+        color: #fffef2;
+        padding: 1px;
+        width: 150px;
         font-size: 11px;
         padding-top: 3px;
-		border-radius: 10px;
-		position: absolute;
+        border-radius: 10px;
+        position: absolute;
         margin: 90px 51%;
-		/*border: 2px solid aqua;*/
-	}
-    #namebaner{
-		overflow: hidden;
-		height: 80px;
-		width: 72%;
-		/*border: 2px solid aqua;*/
-		color: white;
-		text-shadow: 1px 1px 2px black;
-		position: absolute;
+        /*border: 2px solid aqua;*/
+    }
+
+    #namebaner {
+        position: absolute;
+        overflow: scroll;
+        height: 80px;
+        right: 0;
+        width: 50%;
+        font-size: 11px;
+        /*border: 2px solid aqua;*/
+        color: white;
+        /*text-shadow: 1px 1px 2px black;*/
         margin: 1% 1%;
-	}
+        padding-right: 3px;
+    }
+
     .object {
         overflow: scroll;
         display: flex;
@@ -97,25 +107,29 @@
         border-radius: 10px;
 
     }
-    .object:active{
+
+    .object:active {
         transform: scale(0.9);
         transition-duration: 0.5s;
     }
+
     a.sulka {
         overflow: hidden;
         text-decoration: none;
     }
-   .izob{
-	    overflow: hidden;
-	    width: 150px;
+
+    .izob {
+        overflow: hidden;
+        width: 150px;
         height: 140px;
         margin: 3px;
-		border-radius: 10px;
+        border-radius: 10px;
         float: left;
         box-shadow: 3px 3px 3px black;
-   }
-  .photoobject{
-	    object-fit: cover;
+    }
+
+    .photoobject {
+        object-fit: cover;
         width: 100%;
         height: 100%;
     }
@@ -123,45 +137,59 @@
     #disk {
         overflow: hidden;
         text-align: center;
-		color: black;
-		text-shadow: none;
+        color: black;
+        text-shadow: none;
         /*border: 2px solid black;*/
         width: 175px;
         height: 95px;
         margin-top: 5px;
         font-size: 12px;
         margin-left: 164px;
-		padding-bottom: 3px;
-		border-bottom: 1px solid black;
+        padding-bottom: 3px;
+        border-bottom: 1px solid black;
     }
+
     .tel {
         /*border: 1px solid black;*/
         height: 16px;
-		font-size: 14px;
+        font-size: 14px;
         padding-left: 3%;
         padding-top: 5px;
-		padding-bottom: 1px;
+        padding-bottom: 1px;
         margin-left: 180px;
-		margin-right: 19px;
+        margin-right: 19px;
         background: #dd93e6 url("../photo/telep-icon.png") no-repeat 2%;
         border-radius: 10px;
         background-size: 20px 20px;
     }
 
     .address {
-		color: black;
+        color: black;
         overflow: hidden;
         /*border: 2px solid aqua;*/
-		text-align: center;
-		font-size: 12px;
+        text-align: center;
+        font-size: 12px;
         text-decoration: none;
-		margin-top: 3px;
+        margin-top: 3px;
         margin-left: 160px;
         height: 17px;
-     
+
     }
+
+    /*блок листалки*/
+    .blockpage {
+        width: 99%;
+        margin-left: -40px;
+        border-radius: 15px;
+        padding-top: 5px;
+        height: 40px;
+        /*border: 2px solid aqua;*/
+        /*overflow-y: scroll;*/
+        overflow-x: scroll;
+    }
+
     /*листалка*/
-	#list{
+    #list {
         transform: translateY(-85px);
         list-style-type: none;
         display: flex;
@@ -170,16 +198,17 @@
         width: 94%;
         height: 0px;
         text-align: center;
-        margin-left: -23px;
+        margin-left: 330px;
         text-decoration: none;
         /*margin-bottom: 51px;*/
         background: white;
         box-shadow: 1px 1px 2px black;
-	}
+    }
+
     /*элементы листалки*/
-	#pagin{
+    .pagin {
         color: yellow;
-        margin: 5px 5px 5px 5px;
+        margin: 69px 5px 5px 5px;
         width: 19px;
         border: 2px solid #f4e81b;
         box-shadow: 1px 1px 2px 0px black;
@@ -188,53 +217,95 @@
         padding: 5px;
         border-radius: 10px;
 
-	}
-    #pagin:active{
+    }
+
+    .pagin:active {
         background-color: #f84e49;
     }
+
     /*#list #pagin:nth-child(2n){*/
-        /*transform: translateY(-20px);*/
+    /*transform: translateY(-20px);*/
     /*}*/
-    #list #pagin:hover{
+    #list .pagin:hover {
         transform: scale(1.4) rotate(360deg);
     }
+
     /*#list #pagin:nth-child(5){*/
-        /*transform: scale(1.6);*/
+    /*transform: scale(1.6);*/
     /*}*/
     /*#list #pagin:nth-child(4),#list #pagin:nth-child(6){*/
-        /*transform: scale(1.5);*/
-
+    /*transform: scale(1.5);*/
     /*}*/
     /*#list #pagin:nth-child(3),#list #pagin:nth-child(7){*/
-        /*transform: scale(1.4);*/
+    /*transform: scale(1.4);*/
     /*}*/
     /*#list #pagin:nth-child(2),#list #pagin:nth-child(8){*/
-        /*transform: scale(1.2);*/
+    /*transform: scale(1.2);*/
     /*}*/
     /*#list #pagin:nth-child(1),#list #pagin:nth-child(9){*/
-        /*transform: scale(1.1);*/
+    /*transform: scale(1.1);*/
     /*}*/
-	#list a{
+    #list a {
         font-size: 15px;
         font-family: 'Baloo Da 2', cursive;
         font-family: 'Comfortaa', cursive;
-		text-decoration: none;
-	}
-    footer{
+        text-decoration: none;
+    }
+
+    .active {
+        border: 2px solid red;
+        background-color: aqua;
+    }
+
+    /*поиск*/
+    #search {
+        width: 226px;
+        height: 27px;
+        border-radius: 15px;
+        background-color: #f6d0fa;
+        box-shadow: #e6e5f0 0px 1px 2px, #e6e5f0 0px -1px 2px, inset 1px 1px 1px #b80ef1, inset -1px -1px 1px #b80ef1;
+        margin: 20px 0 0 10px;
+    }
+
+    #searchbtn {
+        text-align: center;
+        background: linear-gradient(#ec59f1, #D8F800) no-repeat;
+        height: 21px;
+        width: 105px;
+        box-shadow: 1px 1px 3px #b80ef1, -1px -1px 3px #b80ef1, inset 2px 2px 1px #ffb6fc,
+        inset -2px -2px 1px #ffb6fc;
+        border-radius: 25px;
+        margin: 20px 0 0 3px;
+    }
+
+    #formsearch {
+        position: absolute;
+        top: 14px;
+        right: -7px;
+        margin-top: 50px;
+        max-height: 180px;
         width: 100%;
-        height: 40px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        /*border: 2px solid yellow;*/
+    }
+
+    footer {
+        width: 100%;
+        height: 50px;
         background: #c41af0;
         margin-bottom: 0px;
         transform: translateY(21px);
     }
-    footer h5{
-        padding-top: 10px;
+
+    footer h5 {
+        padding-top: 12px;
     }
 }
 
-
 @media screen and (min-width: 641px) {
-        body {
+    body {
         background: linear-gradient(3rad, #8012aa, #D8F800);
         /*background: url("../photo/fon2.jpg");*/
         background-attachment: fixed;
@@ -250,18 +321,37 @@
         font-family: 'Baloo Da 2', cursive;
         font-family: 'Comfortaa', cursive;
         text-shadow: rgba(2, 1, 7, 0.04) 1px 1px 1px;
-
+        border: 2px solid aqua;
     }
- .baner {
-	    display: none;
-	     position: relative;
-		/*filter: drop-shadow(65px 0px 10px  yellow) drop-shadow(-65px 0px 10px #ffa9f8);*/
-		height: 180px;
+
+    .baner {
+        display: none;
+        position: relative;
+        /*filter: drop-shadow(65px 0px 10px  yellow) drop-shadow(-65px 0px 10px #ffa9f8);*/
+        height: 180px;
         width: 80%;
-		border: 3px solid #ffa9f8;
+        border: 3px solid #ffa9f8;
         border-radius: 10px;
     }
 
+    #spisok {
+        margin-left: -7px;
+    }
+
+    #spisok #element {
+        margin-bottom: 30px;
+    }
+
+    #spisok #element:last-child {
+        margin-bottom: 130px;
+        /*border: 3px solid aqua;*/
+    }
+
+    /*li*/
+    #element {
+        margin-left: -30px;
+        list-style-type: none;
+    }
 
     .object {
         margin-left: auto;
@@ -276,7 +366,7 @@
         background: #fff7ff;
         background-size: 30px 30px;
         border-radius: 10px;
-		border-bottom: 2px solid black;
+        border-bottom: 2px solid black;
         box-shadow: black 3px 3px 3px;
     }
 
@@ -295,16 +385,17 @@
     }
 
     #disk {
-		overflow: hidden;
+        overflow: hidden;
         text-align: center;
-       /* border: 2px solid black;*/
+        /* border: 2px solid black;*/
         height: 95px;
         margin-top: 5px;
         font-size: 12px;
         margin-left: 164px;
-		margin-right: 6px;
-		border-bottom: 2px solid black;
+        margin-right: 6px;
+        border-bottom: 2px solid black;
     }
+
     .tel {
         /*border: 1px solid black;*/
         height: 18px;
@@ -312,7 +403,7 @@
         bottom: -13px;
         padding-left: 3%;
         padding-top: 3px;
-       
+
         margin-left: 53%;
         background: #dd93e6 url("../photo/telep-icon.png") no-repeat 2%;
         border-radius: 10px;
@@ -328,5 +419,69 @@
         width: 235px;
     }
 
+    /*листалка*/
+    #list {
+        transform: translateY(-85px);
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 94%;
+        height: 0px;
+        text-align: center;
+        margin-left: -23px;
+        text-decoration: none;
+        /*margin-bottom: 51px;*/
+        background: white;
+        box-shadow: 1px 1px 2px black;
+    }
+
+    /*элементы листалки*/
+    .pagin {
+        color: yellow;
+        margin: 5px 5px 5px 5px;
+        width: 19px;
+        border: 2px solid #f4e81b;
+        box-shadow: 1px 1px 2px 0px black;
+        height: 17px;
+        background-color: #fffef2;
+        padding: 5px;
+        border-radius: 10px;
+
+    }
+
+    .pagin:active {
+        background-color: #f84e49;
+    }
+
+    #list .pagin:hover {
+        transform: scale(1.4) rotate(360deg);
+    }
+
+    #list a {
+        font-size: 15px;
+        font-family: 'Baloo Da 2', cursive;
+        font-family: 'Comfortaa', cursive;
+        text-decoration: none;
+    }
+
+    .active {
+        border: 2px solid red;
+        background-color: aqua;
+    }
+
+    footer {
+        width: 100%;
+        height: 40px;
+        background: #c41af0;
+        margin-bottom: 0px;
+        transform: translateY(21px);
+    }
+
+    footer h5 {
+        padding-top: 10px;
+    }
 }
+
+
 

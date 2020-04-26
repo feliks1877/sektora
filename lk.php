@@ -1,11 +1,12 @@
-<?php
-require "core.php";
-require('header.php');
-
+<?php session_start();
+require 'core.php';
 //проверка, если не авторизованы переход
 if (!isset($_SESSION['clientId'])) {
     header("Location: $domen/signin.php");
 }
+require 'connectdb.php';
+require'header.php';
+
 ?>
     <link rel="stylesheet" href="css/lk.css">
 
@@ -18,11 +19,11 @@ if ($_SESSION['login'] == 1) {
     echo '</h5>';
 } else {
     echo 'Что-то пошло не так,попробй ещё <a href=\'signup.php\'>Зарегестрироваться</a> <br>';
+    echo 'Или <a href=\'signin.php\'>Войти</a> <br>';
 }
 ?>
 <a href="payhistory.php">История платежей</a>
 <?php
-require 'connectdb.php';
 $clientId = $_SESSION['clientId'];
 /*усли пришли из редактирования объекта ,сохраняется*/
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

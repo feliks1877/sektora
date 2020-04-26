@@ -1,6 +1,14 @@
-<?php require('header.php'); ?>
+<?php session_start();
+require 'core.php';
+if (!isset($_SESSION['clientId'])) {
+header("Location: $domen/signin.php");
+}
+require'header.php';
+?>
+
 <link rel="stylesheet" href="css/adsstyle.css">
 <?php
+
 //   проверяем пришли ли данные с формы
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $address = $_POST["address"];
@@ -56,6 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 }
 ?>
+
 <div class="container">
     <div class="ads">
         <form method="post" action="ads.php" enctype="multipart/form-data">

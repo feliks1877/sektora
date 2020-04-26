@@ -1,4 +1,5 @@
 <?php
+require 'core.php';
 require('header.php');
 ?>
 <link rel="stylesheet" href="css/signupstyle.css">
@@ -43,7 +44,7 @@ require('header.php');
         $conn->close();
     }
     ?>
-
+<div class="container">
 <h1 class="mycity">Регистрация</h1>
 <div class="signup">
     <form method="post" action="signup.php">
@@ -59,6 +60,9 @@ require('header.php');
             <label for="exampleInputPassword1"><h5>Задайте пароль</h5></label>
             <input type="password" name="password" class="inp1" id="exampleInputPassword1" placeholder="Password" autocomplete="off" required>
         </div>
-        <button type="submit" class="btn" value="Продолжить"><span class="next">Далее</span></button>
+        <button type="submit" class="btn" value="Продолжить"><span class="next">Регистрация</span></button>
     </form>
+        <br><a href="signin.php"><button type="submit" class="btn" value="Продолжить"><span class="next">Войти</span></button></a>
+
+</div>
 </div>

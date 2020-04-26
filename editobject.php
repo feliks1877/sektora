@@ -1,12 +1,11 @@
-<?php session_start(); ?>
-<!doctype html>
-<html lang="en">
-<head>
+<?php
+require 'core.php';
+require('header.php');
+
+?>
     <link rel="stylesheet" href="css/edit.css">
-    <title>Редактирование</title>
-</head>
 <body id="edit">
-<?php require('header.php'); ?>
+
 
 <?php
 require 'connectdb.php';
@@ -45,7 +44,7 @@ $active= $row["active"];
         <input type="text" class="" id="address" name="address" value="<?php echo $address ?>" >
 
         <label for="web"><h5>Изменить Ваш сайт</h5></label>
-        <input type="url" class="web" id="" name="web" value="<?php echo $address ?> " >
+        <input type="url" class="web" id="" name="web" value="<?php echo $web ?> " >
 
         <label for="telephone"><h5 class="tele">Добавить телефон</h5></label>
 

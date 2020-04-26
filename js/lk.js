@@ -10,4 +10,5 @@ document.addEventListener("DOMContentLoaded",function () {
         $.post( "ajax/baner.php", { objectId: objectId } );
         alert('Вы доабили объявление в банер'+objectId);
     })
-})
+});
+

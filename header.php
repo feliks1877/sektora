@@ -1,4 +1,6 @@
-<?php session_start(); ?>
+<?php
+require 'core.php';
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -13,12 +15,11 @@
     <title>Header</title>
 </head>
 <body>
-
 <header>
      <div id="zagolovok">
     <h1 id="sek"><a href="main.php" style="text-decoration: none; color: #ffe649;">Sektora</a></h1>
     </div>
-    <a href="lk.php"><img src="photo/iconprof.png" class="iconlk" alt="icon"></a>
+    <a href='<?php echo "$domen/lk.php"; ?>'><img src="photo/iconprof.png" class="iconlk" alt="icon"></a>
     
     <input type="checkbox" name="sub" id="sub">
     <label for="sub" class="icon">
@@ -27,7 +28,6 @@
     <label for="sub" id="icon2">
         <img class="icon" src="photo/iconeys.png">
     </label>
-
     <div class="submenu">
         <nav>
             <ul class="menu">
@@ -40,9 +40,8 @@
                 <li id="liMenu"><a class="saidbar" href="main.php?typeId=3">Услуги массажа</a></li>
                 <li id="liMenu"><a class="saidbar" href="main.php?typeId=4">Барбершопы</a></li>
                 <li id="liMenu"><a class="saidbar" href="ads.php">Добавить объявление</a></li>
+                <li id="liMenu"><a class="saidbar" href="search.php">Поиск</a></li>
                 <li id="liMenu"><a class="saidbar" href="feedback.php">Написать нам&nbsp</a></li>
-
-
             </ul>
         </nav>
     </div>
