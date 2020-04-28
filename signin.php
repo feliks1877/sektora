@@ -23,7 +23,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['login'] = 0;
         echo '<h4>Нет такого пользователя</h4>';
         echo $result->num_rows;
-        echo $email . $password;
     }
     $conn->close();
 }

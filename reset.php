@@ -19,13 +19,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && !isset($_POST["token"])) {
   <title>Перейдите по ссылке</title>
 </head>
 <body>
-  <strong>Ссылка</strong> для востановления пароляЖ <a href='$domen/$link'>Восстановить</a>;
+  <strong>Ссылка</strong> для востановления пароля: <a href='$domen/$link'>Восстановить</a>;
 </body>
 </html>";
 
     $headers = 'MIME-Version: 1.0' . "\r\n";
     $headers .= 'Content-type: text/html; charset=utf8' . "\r\n";
-
+    $headers .= "From: support@sektora.ru" . "\r\n";
     require 'connectdb.php';
 
     $sql = "SELECT count(*) as result
