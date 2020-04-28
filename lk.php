@@ -5,16 +5,20 @@ if (!isset($_SESSION['clientId'])) {
     header("Location: $domen/signin.php");
 }
 require 'connectdb.php';
-require'header.php';
-
 ?>
-    <link rel="stylesheet" href="css/lk.css">
 
+<head>
+    <link rel="stylesheet" href="css/lk.css">
+    <title>Личный кабинет</title>
+</head>
+
+<?php require'header.php'; ?>
 <div id="lkblock">
 <h4>Увидевший прекрасное — соучастник его создания</h4>
 <?php
+
 if ($_SESSION['login'] == 1) {
-    echo '<h5>Мы рады Тебя видеть) А это номер твоего личного кабинета,укажи его если будешь писать нам→';
+    echo '<h5>Мы рады Тебя видеть) А это номер Tвоего личного кабинета, укажи его если будешь писать нам → ';
     echo $_SESSION['clientId'];
     echo '</h5>';
 } else {
@@ -137,3 +141,4 @@ while ($row = $result->fetch_assoc()) {
 }
 ?>
 </div>
+<?php require 'footerfixed.php';?>

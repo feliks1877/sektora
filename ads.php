@@ -20,6 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo date("d.m.y h:m:s");
     $description = $_POST["description"];
     $web = $_POST["web"];
+    $insta = $_POST["insta"];
     $total = count($_FILES['photo']['name']);
     $photo = "";
     for ($i = 0; $i < $total; $i++) {
@@ -34,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     require 'connectdb.php';
 //    echo $clientId . "<br>" . $typeId . "<br>" . $address . "<br>" . $telephone . "<br>" . $cityId . "<br>" . $description . "<br>" . $photo . "<br>" .$date ."<br>";
     $sql = "INSERT INTO objects VALUES (null," . $clientId . " , " . $typeId . " , '" . $address . "','" . $telephone .
-        "'," . $cityId . ",'" . $name . "','" . $description . "','" . $web . "','" . $photo . "',0,'". $date ."',1,0)";
+        "'," . $cityId . ",'" . $name . "','" . $description . "','" . $web . "','" .$insta . "','" . $photo . "',0,'". $date ."',1,0)";
 //  echo "<pre>".$sql."</pre>";
     if ($conn->query($sql) === TRUE) {
         echo "<h4>Объявлениe успешно добавлено<br>Спасибо что выбрали нас</h4>";
@@ -94,12 +95,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <option value="7">Салон красоты</option>
                 </select>
                 <div class="">
-                    <label for="name"><h5>Заголовок</h5></label>
+                    <label for="name"><h5>Название и краткое описание</h5></label>
                     <textarea class="area" name="name" id="name" cols="40" rows="7"
                               placeholder="Добавьте здесь название Вашей организации и заголовок,эта запись будет отображаться в общем списке объявлений, максимальное колличество
                             символов не должно превышать 130"  title="Добавьте здесь название Вашей организации и заголовок,это будет отображаться в общем списке объявлений. Максимальное колличество символов не должно превышать 130" maxlength="130" required></textarea>
                 </div>
-                <label for="area"><h5>Добавить описание</h5></label>
+                <label for="area"><h5>Добавить полное описание</h5></label>
                 <div class="text">
                     <textarea class="area" name="description" id="area" cols="40" rows="15"
                               placeholder="Добавьте здесь название Вашей организации и заголовок(полное описание),эта запись будет отображаться на внутренией странице Вашего объявления максимальное колличество
@@ -114,6 +115,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <label for="web"><h5>Укажите Ваш сайт</h5></label>
                     <input type="text" class="address" id="web" name="web"placeholder="Укажите свой сайт или аккаунт в соцсетях" required>
                 </div>
+                <div class="">
+                    <label for="insta"><h5>Укажите Ваш Instagram</h5></label>
+                    <input type="text" class="address" id="insta" name="insta"placeholder="Ваш Instagram">
+                </div>
                 <label for="photo"><h5>Добавить фото</h5></label>
                 <div class="photo">
                     <input type="file" name="photo[]" id="photo" placeholder="Загрузите фото" multiple="multiple"
@@ -122,15 +127,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
                 <label for="telephone"><h5 class="tele">Добавить телефон</h5></label>
                 <div class="tel">
-                    <input type="text" name="telephone" id="telephone" placeholder="Ваш номер телефона" required>
+                    <input type="text" name="telephone" id="telephone" placeholder="Ваш номер телефона"
+                          pattern="+7\([0-9]{3})[0-9]{3}-[0-9]{2}-[0-9]{2}" maxlength="11" required>
                 </div>
                 <button class="adsbtn" type="submit" value='Добавить' style="width: 130px; margin-left: 32%"><p>Добавить</p></button>
             </div>
         </form>
     </div>
 </div>
-<?php
-//require('footer.php');
-//?>
+<?php require 'footerfixed.php';?>
 </body>
 </html>

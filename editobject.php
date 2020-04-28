@@ -1,6 +1,6 @@
 <?php
 require 'core.php';
-require('header.php');
+require 'header.php';
 
 ?>
     <link rel="stylesheet" href="css/edit.css">
@@ -31,7 +31,7 @@ $active= $row["active"];
         <label for="name"><h5>Редактировать заголовок</h5></label>
         <textarea type="text" class="" id="name" name="name" placeholder="Здесь напишите назавание и краткое описание эта запись будет отображаться в общем списке 
 		объявлений,а так же при добавлении в банер " value=""  cols="30"
-                  rows="3" required><?php echo $name ?></textarea>
+                  rows="6" required><?php echo $name ?></textarea>
 
         <label for="area"><h5>Изменить описание</h5></label>
 
@@ -73,6 +73,6 @@ $active= $row["active"];
 </div>
 
 <script src="js/slide.js"></script>
-
+<?php require'footerfixed.php';?>
 </body>
 </html>

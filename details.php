@@ -30,6 +30,7 @@ $_SESSION['timeout'] = time();
         $row = $result->fetch_assoc();
         $clientId = $row['clientId'];
         $web = $row["web"];
+        $insta = $row["insta"];
 
         anticlick($objectId, $clientId);
 
@@ -64,7 +65,6 @@ $_SESSION['timeout'] = time();
         echo "</div>";
         ?>
     </div>
-    <a id="web" href="<?php echo $web ?>">Наш сайт</a>
     <div class="slideshow-container">
         <?php
         for ($i = 0; $i < $n - 1; $i++) {
@@ -77,6 +77,7 @@ $_SESSION['timeout'] = time();
                 <div class="text"></div>
 
             </div>
+
             <?php
         }
         ?>
@@ -85,7 +86,15 @@ $_SESSION['timeout'] = time();
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
     <br>
+    <div class="social">
+        <a id="web" href="<?php echo $web ?>" style="font-size: 12px" target="_blank">Наш сайт</a>
+        <a href="<?php echo $insta ?>" target="_blank" "><img id="insta" src="photo/iconinsta.png" style="width: 43px; height: 43px;">
+<!--        <a href="--><?php //echo $vk ?><!--" "><img id="insta" src="photo/iconvk.png" style="width: 49px;-->
+<!--    height: 42px;-->
+<!--    margin-left: -10px;-->
+<!--    padding-top: 3px;">-->
+    </div>
 
-
+    <?php require 'footer.php'; ?>
     <script src="js/slide.js"></script>
 </div>

@@ -1,18 +1,13 @@
-
 @media screen and (max-width: 599px){
     html{
-        background: url("../photo/fon1.jpg");
-    }
-}
-@media screen and (min-width: 600px){
-    html{
         background: linear-gradient(3rad, #8012aa, #D8F800) no-repeat;
-        /*height: 1100px;*/
+        background-size: 415px 1035px;
     }
 }
 body{
     margin: 0px 0px 0px 0px;
     display: flex;
+    min-height: 500px;
     flex-direction: column;
     /*justify-content: space-around;*/
     align-items: center;
@@ -71,3 +66,30 @@ button:active::before{
     font-family: 'Baloo Da 2', cursive;
     font-family: 'Comfortaa', cursive;
 }
+#reset{
+    position: fixed;
+    color: #d007b7;
+    bottom: 60px;
+    border: 2px solid #d64bd4;
+    border-radius: 15px;
+    padding: 0px 5px 2px;
+}
+@media screen and (min-width: 600px) {
+    html {
+        background: linear-gradient(3rad, #8012aa, #D8F800) no-repeat;
+        background-size: 1500px 1500px;
+    }
+    button {
+        height: 30px;
+        width: 125px;
+        margin: 20px 0 0 120px;
+    }
+    .inp1, .inp1:focus, .inp1:active{
+        height: 40px;
+        min-width: 315px;
+    }
+    div.signin{
+        width: 350px;
+    }
+}
+

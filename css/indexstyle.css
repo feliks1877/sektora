@@ -25,22 +25,12 @@
     font-weight: bold;
     text-align: center;
 }
-@media screen and (max-width: 599px){
+@media screen and (max-width: 640px){
     html{
-		background: linear-gradient(3rad, #8012aa, #D8F800) no-repeat;
-        background: url("../photo/f39.jpg")49%;
-        background-size: 390px;
+        background: linear-gradient(3rad, #8012aa, #D8F800) no-repeat;
+        background-size: 600px 1035px;
     }
 }
-@media screen and (min-width: 600px){
-    html{
-    position:fixed;
-    background: linear-gradient(3rad, #8012aa, #D8F800) no-repeat;
-    height: 1500px;
-}
-}
-
-
 body{
     margin: 0px 0px 0px 0px;
     display: flex;
@@ -51,6 +41,7 @@ body{
 .city,
 .city:focus,
 .city:active{
+    color: #4f4d56bf;
     outline: none;
     background-color: #f6d0fa;
     border-radius: 15px;
@@ -102,4 +93,23 @@ button:active::before{
     text-shadow: 1px 1px 0 black;
     font-family: 'Baloo Da 2', cursive;
     font-family: 'Comfortaa', cursive;
+}
+@media screen and (min-width: 641px) {
+    html {
+        position: fixed;
+        background: linear-gradient(3rad, #8012aa, #D8F800) no-repeat;
+        background-size: 1500px 1500px;
+    }
+
+    button {
+        height: 30px;
+        width: 125px;
+        margin: 20px 0 0 96px;
+    }
+    .city,
+    .city:focus,
+    .city:active {
+        height: 40px;
+        min-width: 315px;
+    }
 }

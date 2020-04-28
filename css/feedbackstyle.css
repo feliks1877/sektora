@@ -6,7 +6,6 @@ body{
     /*border: 2px solid aqua;*/
     display: flex;
     justify-content: space-around;
-    min-height: 770px;
 } 
 .feed2 {
     /*border: 2px solid aqua;*/

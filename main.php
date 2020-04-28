@@ -115,8 +115,12 @@ require 'banermain.php';
 </div>
 
 <?php require 'pagenatormain.php'; ?>
-<footer>
-    <h5>©2020 of Work</h5>
+<footer style="width: 100%;
+    height: 50px;
+    background: #c41af0;
+    margin-bottom: 0px;
+    transform: translateY(21px);">
+    <h5 style="padding-top: 15px">©2020 of Work</h5>
 </footer>
 <?php //require 'footer.php'; ?>
 

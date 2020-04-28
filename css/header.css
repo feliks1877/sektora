@@ -4,6 +4,7 @@
     background-color: greenyellow;
 }
 .iconlk {
+    filter: drop-shadow(1px 3px 8px #ffffff);
     position: fixed;
     right: 20px;
     top: 20px;
@@ -53,6 +54,7 @@ input#sub{
     display: none;
 }
 img.icon{
+    filter: drop-shadow(1px 3px 8px #ffffff);
     position: fixed;
     /*z-index: 1;*/
     height: 30px;

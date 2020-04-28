@@ -60,6 +60,6 @@
     $conn->close();
 }*/
 ?>
-
+<?php require'footerfixed.php';?>
 </body>
 </html>

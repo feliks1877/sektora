@@ -1,8 +1,18 @@
+.social{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 90px;
+    width: 100%;
+    /*border: 2px solid aqua;*/
+}
 @media screen and (max-width: 599px) {
     body {
         margin: 0px;
     }
     .detail {
+        position: relative;
         margin: 0px;
         font-family: 'Baloo Da 2', cursive;
         font-family: 'Comfortaa', cursive;
@@ -62,13 +72,16 @@
         color: #D8F800;
     }
     #web{
-
-		border-radius: 15px;
-        padding: 5px;
+        width: 55px;
+        height: 29px;
+        border-radius: 10px;
+        padding: 1px;
         color: #D8F800;
-		margin-left: 65%;
-		margin-top: 5px;
-		border: 2px solid yellow;
+        border: 2px solid yellow;
+        text-align: center
+    }
+    #web a{
+        font-size: 12px;
     }
 	a{
 		text-decoration: none;

@@ -53,9 +53,13 @@ require('header.php');
                autocomplete="off" required>
 
         <button type="submit" class="btn" value="Продолжить"><span>Войти</span></button><br>
+
     </form>
+
     <a href="<?php echo $domen ?>/signup.php"><button type="" class="btn" value="Регистрация"><span>Регистрация</span></button></a>
 
 </div>
+<a id="reset" href="reset.php">Восстановить пароль</a>
+<?php require'footerfixed.php';?>
 </body>
 </html>

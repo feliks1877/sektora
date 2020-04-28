@@ -33,10 +33,15 @@ if($objectId != ""){
 <?php
  }else{
    echo '
+<a href="lk.php">
 <div  class="baner">
+<h2 id="namebaner">SEKTORA.RU<br>
+Разместите ваше ообъявление,нa нашем ресурсе.
+Здесь только реальные пользователи и ничего лишнего.
+</h2>    
 <span id="textbaner">Sektora.ru</span>
-<img id="banerimg" src="photo/zastavka.jpg">
-</div>';
+<img id="banerimg" src="photo/fonbaner2.jpg">
+</div></a>';
 }
 $conn->close();
 ?>

@@ -1,0 +1,209 @@
+body {
+    position: relative;
+    background: linear-gradient(3rad, #8012aa, #D8F800);
+    /*background: url("../photo/fon2.jpg");*/
+    background-attachment: fixed;
+    margin: 0px;
+    margin-bottom: 20px;
+    /*margin-bottom: 150px;*/
+}
+
+/*осовной блок списка объявлений*/
+.main {
+    min-height: 600px;
+    display: grid;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2px;
+    font-family: 'Baloo Da 2', cursive;
+    font-family: 'Comfortaa', cursive;
+    text-shadow: rgba(2, 1, 7, 0.04) 1px 1px 1px;
+}
+
+/*список блоков объявлений*/
+/*ul*/
+#spisok {
+    margin-left: -7px;
+}
+
+#spisok #element {
+    margin-bottom: 30px;
+}
+
+#spisok #element:last-child {
+    margin-bottom: 40px;
+    /*border: 3px solid aqua;*/
+}
+
+/*li*/
+#element {
+    margin-left: -30px;
+    list-style-type: none;
+}
+
+/*банер*/
+.baner {
+    overflow: scroll;
+    box-shadow: 55px 0px 10px #ffa9f8, -55px 0px 10px #ffa9f8;
+    height: 110px;
+    width: 95%;
+    margin-left: 8px;
+    border: 3px solid #ffa9f8;
+    border-radius: 15px;
+}
+
+.baner:active {
+    transform: scale(0.9);
+    transition-duration: 0.5s;
+}
+
+#banerimg {
+    border-radius: 11px;
+    object-fit: fill;
+    width: 47%;
+    height: 100%;
+}
+
+#textbaner {
+    text-align: center;
+    background-color: #f182ee;
+    color: #fffef2;
+    padding: 1px;
+    width: 150px;
+    font-size: 11px;
+    padding-top: 3px;
+    border-radius: 10px;
+    position: absolute;
+    margin: 90px 51%;
+    /*border: 2px solid aqua;*/
+}
+
+#namebaner {
+    position: absolute;
+    overflow: scroll;
+    height: 80px;
+    right: 0;
+    width: 50%;
+    font-size: 11px;
+    /*border: 2px solid aqua;*/
+    color: white;
+    /*text-shadow: 1px 1px 2px black;*/
+    margin: 1% 1%;
+    padding-right: 3px;
+}
+
+.object {
+    overflow: scroll;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 150px;
+    width: 350px;
+    text-align: center;
+    background: #fff7ff;
+    background-size: 30px 30px;
+    border-radius: 10px;
+
+}
+
+.object:active {
+    transform: scale(0.9);
+    transition-duration: 0.5s;
+}
+
+a.sulka {
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.izob {
+    overflow: hidden;
+    width: 150px;
+    height: 140px;
+    margin: 3px;
+    border-radius: 10px;
+    float: left;
+    box-shadow: 3px 3px 3px black;
+}
+
+.photoobject {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#disk {
+    overflow: hidden;
+    text-align: center;
+    color: black;
+    text-shadow: none;
+    /*border: 2px solid black;*/
+    width: 175px;
+    height: 95px;
+    margin-top: 5px;
+    font-size: 12px;
+    margin-left: 164px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid black;
+}
+
+.tel {
+    /*border: 1px solid black;*/
+    height: 16px;
+    font-size: 14px;
+    padding-left: 3%;
+    padding-top: 5px;
+    padding-bottom: 1px;
+    margin-left: 180px;
+    margin-right: 19px;
+    background: #dd93e6 url("../photo/telep-icon.png") no-repeat 2%;
+    border-radius: 10px;
+    background-size: 20px 20px;
+}
+
+.address {
+    color: black;
+    overflow: hidden;
+    /*border: 2px solid aqua;*/
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    margin-top: 3px;
+    margin-left: 160px;
+    height: 17px;
+
+}
+
+/*поиск*/
+#search {
+    width: 226px;
+    height: 27px;
+    border-radius: 15px;
+    background-color: #f6d0fa;
+    box-shadow: #e6e5f0 0px 1px 2px, #e6e5f0 0px -1px 2px, inset 1px 1px 1px #b80ef1, inset -1px -1px 1px #b80ef1;
+    margin: 20px 0 0 10px;
+}
+#searchbtn {
+    text-align: center;
+    background: linear-gradient(#ec59f1, #D8F800) no-repeat;
+    height: 21px;
+    width: 105px;
+    box-shadow: 1px 1px 3px #b80ef1, -1px -1px 3px #b80ef1, inset 2px 2px 1px #ffb6fc,
+    inset -2px -2px 1px #ffb6fc;
+    border-radius: 25px;
+    margin: 20px 0 0 3px;
+}
+
+#formsearch {
+    position: absolute;
+    top: 14px;
+    right: -7px;
+    margin-top: 50px;
+    max-height: 180px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /*border: 2px solid yellow;*/
+}

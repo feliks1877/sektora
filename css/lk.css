@@ -7,22 +7,24 @@ h2, h3, h4, h5, h6, p {
 }
 
 button {
+    color: #4f4d56bf;
     /*margin-left: 36%;*/
     width: 100px;
     border-radius: 20px;
     height: 25px;
     background: linear-gradient(#ce59f7, #D8F800) no-repeat;
-    box-shadow: 2px 2px 5px black;
+    box-shadow: #e6e5f0 0px 1px 2px, #e6e5f0 0px -1px 2px,inset 1px 1px 1px #b80ef1,inset -1px -1px 1px #b80ef1;
 }
 @media screen and (min-width: 600px){
 
     button {
+        color: #4f4d56bf;
         /*margin-left: 45%;*/
         width: 115px;
         border-radius: 20px;
         height: 30px;
         background: linear-gradient(#ce59f7, #D8F800) no-repeat;
-        box-shadow: 2px 2px 5px black;
+        box-shadow: #e6e5f0 0px 1px 2px, #e6e5f0 0px -1px 2px,inset 1px 1px 1px #b80ef1,inset -1px -1px 1px #b80ef1;
     }
 }
 button:active {
@@ -41,7 +43,9 @@ body {
     /*align-items: stretch;*/
     text-align: center;
 }
-
+#lkblock{
+    padding-bottom: 80px;
+}
 .object {
     background: #f6d0fa;
     display: flex;
