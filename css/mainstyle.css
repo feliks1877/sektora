@@ -1,413 +1,337 @@
-@media screen and (max-width: 640px) {
-    body {
-        position: relative;
-        background: linear-gradient(3rad, #8012aa, #D8F800);
-        /*background: url("../photo/fon2.jpg");*/
-        background-attachment: fixed;
-        margin: 0px;
-        margin-bottom: 20px;
-        /*margin-bottom: 150px;*/
-    }
 
-    /*осовной блок списка объявлений*/
-    .main {
-        min-height: 600px;
-        display: grid;
-        flex-direction: column;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        padding: 2px;
-        font-family: 'Baloo Da 2', cursive;
-        font-family: 'Comfortaa', cursive;
-        text-shadow: rgba(2, 1, 7, 0.04) 1px 1px 1px;
-    }
+body {
+    position: relative;
+    background: linear-gradient(3rad, #8012aa, #D8F800);
+    /*background: url("../photo/fon2.jpg");*/
+    background-attachment: fixed;
+    margin: 0px;
+    margin-bottom: 20px;
+    /*margin-bottom: 150px;*/
+}
 
-    /*список блоков объявлений*/
-    /*ul*/
-    #spisok {
-        margin-left: -7px;
-    }
+/*осовной блок списка объявлений*/
+.main {
+    min-height: 600px;
+    display: grid;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2px;
+    font-family: 'Baloo Da 2', cursive;
+    font-family: 'Comfortaa', cursive;
+    text-shadow: rgba(2, 1, 7, 0.04) 1px 1px 1px;
+}
 
-    #spisok #element {
-        margin-bottom: 30px;
-    }
+/*список блоков объявлений*/
+/*ul*/
+#spisok {
+    margin-left: -7px;
+}
 
-    #spisok #element:last-child {
-        margin-bottom: 40px;
-        /*border: 3px solid aqua;*/
-    }
+#spisok #element {
+    margin-bottom: 30px;
+}
 
-    /*li*/
-    #element {
-        margin-left: -30px;
-        list-style-type: none;
-    }
+#spisok #element:last-child {
+    margin-bottom: 40px;
+    /*border: 3px solid aqua;*/
+}
 
-    /*банер*/
-    .baner {
-        overflow: scroll;
-        box-shadow: 55px 0px 10px #ffa9f8, -55px 0px 10px #ffa9f8;
-        height: 110px;
-        width: 95%;
-        margin-left: 8px;
-        border: 3px solid #ffa9f8;
-        border-radius: 15px;
-    }
+/*li*/
+#element {
+    margin-left: -30px;
+    list-style-type: none;
+}
 
-    .baner:active {
-        transform: scale(0.9);
-        transition-duration: 0.5s;
-    }
+/*банер*/
+.baner {
+    overflow: scroll;
+    box-shadow: 55px 0px 10px #ffa9f8, -55px 0px 10px #ffa9f8;
+    height: 110px;
+    width: 95%;
+    margin-left: 8px;
+    border: 3px solid #ffa9f8;
+    border-radius: 15px;
+}
 
-    #banerimg {
-        border-radius: 11px;
-        object-fit: fill;
-        width: 47%;
-        height: 100%;
-    }
+.baner:active {
+    transform: scale(0.9);
+    transition-duration: 0.5s;
+}
 
-    #textbaner {
-        text-align: center;
-        background-color: #f182ee;
-        color: #fffef2;
-        padding: 1px;
-        width: 150px;
-        font-size: 11px;
-        padding-top: 3px;
-        border-radius: 10px;
-        position: absolute;
-        margin: 90px 51%;
-        /*border: 2px solid aqua;*/
-    }
+#banerimg {
+    border-radius: 11px;
+    object-fit: fill;
+    width: 47%;
+    height: 100%;
+}
 
-    #namebaner {
-        position: absolute;
-        overflow: scroll;
-        height: 80px;
-        right: 0;
-        width: 50%;
-        font-size: 11px;
-        /*border: 2px solid aqua;*/
-        color: white;
-        /*text-shadow: 1px 1px 2px black;*/
-        margin: 1% 1%;
-        padding-right: 3px;
-    }
+#textbaner {
+    text-align: center;
+    background-color: #f182ee;
+    color: #fffef2;
+    padding: 1px;
+    width: 150px;
+    font-size: 11px;
+    padding-top: 3px;
+    border-radius: 10px;
+    position: absolute;
+    margin: 90px 51%;
+    /*border: 2px solid aqua;*/
+}
 
-    .object {
-        overflow: scroll;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        height: 150px;
-        width: 350px;
-        text-align: center;
-        background: #fff7ff;
-        background-size: 30px 30px;
-        border-radius: 10px;
+#namebaner {
+    position: absolute;
+    overflow: scroll;
+    height: 80px;
+    right: 0;
+    width: 50%;
+    font-size: 11px;
+    /*border: 2px solid aqua;*/
+    color: white;
+    /*text-shadow: 1px 1px 2px black;*/
+    margin: 1% 1%;
+    padding-right: 3px;
+}
 
-    }
+.object {
+    overflow: scroll;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 150px;
+    width: 350px;
+    text-align: center;
+    background: #fff7ff;
+    background-size: 30px 30px;
+    border-radius: 10px;
 
-    .object:active {
-        transform: scale(0.9);
-        transition-duration: 0.5s;
-    }
+}
 
-    a.sulka {
-        overflow: hidden;
-        text-decoration: none;
-    }
+.object:active {
+    transform: scale(0.9);
+    transition-duration: 0.5s;
+}
 
-    .izob {
-        overflow: hidden;
-        width: 150px;
-        height: 140px;
-        margin: 3px;
-        border-radius: 10px;
-        float: left;
-        box-shadow: 3px 3px 3px black;
-    }
+a.sulka {
+    overflow: hidden;
+    text-decoration: none;
+}
 
-    .photoobject {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-    }
+.izob {
+    overflow: hidden;
+    width: 150px;
+    height: 140px;
+    margin: 3px;
+    border-radius: 10px;
+    float: left;
+    box-shadow: 3px 3px 3px black;
+}
 
-    #disk {
-        overflow: hidden;
-        text-align: center;
-        color: black;
-        text-shadow: none;
-        /*border: 2px solid black;*/
-        width: 175px;
-        height: 95px;
-        margin-top: 5px;
-        font-size: 12px;
-        margin-left: 164px;
-        padding-bottom: 3px;
-        border-bottom: 1px solid black;
-    }
+.photoobject {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
 
-    .tel {
-        /*border: 1px solid black;*/
-        height: 16px;
-        font-size: 14px;
-        padding-left: 3%;
-        padding-top: 5px;
-        padding-bottom: 1px;
-        margin-left: 180px;
-        margin-right: 19px;
-        background: #dd93e6 url("../photo/telep-icon.png") no-repeat 2%;
-        border-radius: 10px;
-        background-size: 20px 20px;
-    }
+#disk {
+    overflow: hidden;
+    text-align: center;
+    color: black;
+    text-shadow: none;
+    /*border: 2px solid black;*/
+    width: 175px;
+    height: 95px;
+    margin-top: 5px;
+    font-size: 12px;
+    margin-left: 164px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid black;
+}
 
-    .address {
-        color: black;
-        overflow: hidden;
-        /*border: 2px solid aqua;*/
-        text-align: center;
-        font-size: 12px;
-        text-decoration: none;
-        margin-top: 3px;
-        margin-left: 160px;
-        height: 17px;
+.tel {
+    /*border: 1px solid black;*/
+    height: 16px;
+    font-size: 14px;
+    padding-left: 3%;
+    padding-top: 5px;
+    padding-bottom: 1px;
+    margin-left: 180px;
+    margin-right: 19px;
+    background: #dd93e6 url("../photo/telep-icon.png") no-repeat 2%;
+    border-radius: 10px;
+    background-size: 20px 20px;
+}
 
-    }
+.address {
+    color: black;
+    overflow: hidden;
+    /*border: 2px solid aqua;*/
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    margin-top: 3px;
+    margin-left: 160px;
+    height: 17px;
 
-    /*блок листалки*/
-    .blockpage {
-        width: 99%;
-        margin-left: -40px;
-        border-radius: 15px;
-        padding-top: 5px;
-        height: 40px;
-        /*border: 2px solid aqua;*/
-        /*overflow-y: scroll;*/
-        overflow-x: scroll;
-    }
+}
 
-    /*листалка*/
-    #list {
-        transform: translateY(-85px);
-        list-style-type: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 94%;
-        height: 0px;
-        text-align: center;
-        margin-left: 330px;
-        text-decoration: none;
-        /*margin-bottom: 51px;*/
-        background: white;
-        box-shadow: 1px 1px 2px black;
-    }
+/*блок листалки*/
+.blockpage {
+    display: flex;
+    overflow: scroll;
+    width: 77%;
+    bottom: -22px;
+    position: absolute;
+    margin-left: 40px;
+}
 
-    /*элементы листалки*/
-    .pagin {
-        color: yellow;
-        margin: 69px 5px 5px 5px;
-        width: 19px;
-        border: 2px solid #f4e81b;
-        box-shadow: 1px 1px 2px 0px black;
-        height: 17px;
-        background-color: #fffef2;
-        padding: 5px;
-        border-radius: 10px;
+/*листалка*/
+#list {
+    list-style-type: none;
+    display: flex;
 
-    }
+    filter: drop-shadow(1px 1px 2px black);
+}
 
-    .pagin:active {
-        background-color: #f84e49;
-    }
+#list:first-child {
+    margin-left: -27px;
+}
 
-    #list .pagin:hover {
-        transform: scale(1.4) rotate(360deg);
-    }
+#list a:nth-child(-n+25){
 
-    #list a {
-        font-size: 15px;
-        font-family: 'Baloo Da 2', cursive;
-        font-family: 'Comfortaa', cursive;
-        text-decoration: none;
-    }
+    color: white;
+}
+#list > li:nth-of-type(-n+9){
+    /*width: 14px;*/
+    /*padding-left: 10px;*/
+    /*padding-top: 1px;*/
+    /*height: 22px;*/
+}
+#list > li:not(:nth-of-type(-n+9)){
+    /*padding-left: 8px;*/
+    /*padding-top: 1px;*/
+    /*border: 1px solid aqua;*/
+}
 
-    .active {
-        border: 2px solid red;
-        background-color: aqua;
-    }
+/*элементы листалки*/
+.pagin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    /*border: 1px solid aqua;*/
+    margin: 5px 5px 5px 5px;
+    height: 25px;
+    width: 25px;
+    background: url(../photo/paginicon.png) 0px 0px no-repeat;
+    background-size: 24px 24px;
+}
+
+.pagin:active {
+    background-color: #f89cf6;
+}
+
+#list .pagin:hover {
+    transform: scale(1.4) rotate(360deg);
+}
+
+#list a {
+    font-size: 9px;
+    font-family: 'Baloo Da 2', cursive;
+    font-family: 'Comfortaa', cursive;
+    text-decoration: none;
+
+}
+
+.blockpage::-webkit-scrollbar {
+    width: 0;
+}
+
+.active {
+    border: 2px solid red;
+    background-color: aqua;
+}
+
+.blockpage::-webkit-scrollbar {
+    width: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
 }
 
 @media screen and (min-width: 641px) {
     body {
-        background: linear-gradient(3rad, #8012aa, #D8F800);
-        /*background: url("../photo/fon2.jpg");*/
-        background-attachment: fixed;
-        margin: 0px;
-        margin-bottom: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-size: 2500px 3500px;
+    }
+
+    .baner {
+        position: relative;
+        overflow: visible;
+        width: 100%;
+        height: 170px;
     }
 
     .main {
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        font-family: 'Baloo Da 2', cursive;
-        font-family: 'Comfortaa', cursive;
-        text-shadow: rgba(2, 1, 7, 0.04) 1px 1px 1px;
-        border: 2px solid aqua;
-    }
-
-    .baner {
-        display: none;
-        position: relative;
-        /*filter: drop-shadow(65px 0px 10px  yellow) drop-shadow(-65px 0px 10px #ffa9f8);*/
-        height: 180px;
-        width: 80%;
-        border: 3px solid #ffa9f8;
-        border-radius: 10px;
     }
 
     #spisok {
-        margin-left: -7px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     #spisok #element {
-        margin-bottom: 30px;
-    }
-
-    #spisok #element:last-child {
-        margin-bottom: 130px;
-        /*border: 3px solid aqua;*/
-    }
-
-    /*li*/
-    #element {
-        margin-left: -30px;
-        list-style-type: none;
+        margin: 10px;
     }
 
     .object {
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        height: 150px;
-        width: 400px;
-        margin-top: 25px;
-        text-align: center;
-        background: #fff7ff;
-        background-size: 30px 30px;
-        border-radius: 10px;
-        border-bottom: 2px solid black;
-        box-shadow: black 3px 3px 3px;
+        overflow: visible;
     }
 
-    a.sulka {
-        overflow: hidden;
-        text-decoration: none;
+    #namebaner {
+        position: absolute;
+        overflow: visible;
+        top: 16px;
+        font-size: 17px;
     }
 
-    img {
-        border-radius: 10px;
-        float: left;
+    #textbaner {
+        margin: 140px 59%;
         width: 150px;
-        height: 140px;
-        margin: 3px;
-        box-shadow: 2px 2px 2px;
+        height: 16px;
+        border-radius: 25px;
+        padding-top: 5px;
     }
 
-    #disk {
-        overflow: hidden;
-        text-align: center;
-        /* border: 2px solid black;*/
-        height: 95px;
-        margin-top: 5px;
-        font-size: 12px;
-        margin-left: 164px;
-        margin-right: 6px;
-        border-bottom: 2px solid black;
-    }
-
-    .tel {
-        /*border: 1px solid black;*/
-        height: 18px;
-        width: 125px;
-        bottom: -13px;
-        padding-left: 3%;
-        padding-top: 3px;
-
-        margin-left: 53%;
-        background: #dd93e6 url("../photo/telep-icon.png") no-repeat 2%;
-        border-radius: 10px;
-        background-size: 22px 22px;
-    }
-
-    .address {
-        overflow: hidden;
-        /*border: 2px solid aqua;*/
-        text-decoration: none;
-        margin-left: 160px;
-        height: 20px;
-        width: 235px;
-    }
-
-    /*листалка*/
-    #list {
-        transform: translateY(-85px);
-        list-style-type: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 94%;
-        height: 0px;
-        text-align: center;
-        margin-left: -23px;
-        text-decoration: none;
-        /*margin-bottom: 51px;*/
-        background: white;
-        box-shadow: 1px 1px 2px black;
-    }
-
-    /*элементы листалки*/
-    .pagin {
-        color: yellow;
-        margin: 5px 5px 5px 5px;
-        width: 19px;
-        border: 2px solid #f4e81b;
-        box-shadow: 1px 1px 2px 0px black;
-        height: 17px;
-        background-color: #fffef2;
-        padding: 5px;
-        border-radius: 10px;
+    #strelkal {
 
     }
 
-    .pagin:active {
-        background-color: #f84e49;
+    /*.blockpage{*/
+    /*overflow-x: scroll;*/
+    /*width: 74%;*/
+    /*margin-left: 0%;*/
+    /*}*/
+    .blockpage::-webkit-scrollbar {
+        width: 0;
     }
-
-    #list .pagin:hover {
-        transform: scale(1.4) rotate(360deg);
+    .blockpage{
+        margin-left: 3px;
     }
-
-    #list a {
-        font-size: 15px;
-        font-family: 'Baloo Da 2', cursive;
-        font-family: 'Comfortaa', cursive;
-        text-decoration: none;
-    }
-
-    .active {
-        border: 2px solid red;
-        background-color: aqua;
-    }
-
-
+    /*#list{*/
+    /*margin-left: 100px;*/
+    /*}*/
 }
+
+
+
+
 
 
 

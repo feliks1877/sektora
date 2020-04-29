@@ -1,8 +1,14 @@
 #footerfixed {
     position: fixed;
+    z-index: 0;
     width: 100%;
     height: 50px;
     background: #c41af0;
     bottom: 0;
     right: 0;
+}
+@media screen and (max-height: 600px){
+    #footerfixed{
+        display: none;
+    }
 }

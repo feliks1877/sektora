@@ -7,7 +7,7 @@ require 'header.php';
 //}
 ?>
 <link rel="stylesheet" href="css/mainstyle.css">
-
+<div id="mainzagolovok">
 <?php
 require 'connectdb.php';
 $typeId = isset($_GET['typeId']) ? $_GET['typeId'] : '';
@@ -45,6 +45,7 @@ if ($cityId != "") {
 }
 
 ?>
+</div>
 <?php
 require 'banermain.php';
 ?>
@@ -115,12 +116,6 @@ require 'banermain.php';
 </div>
 
 <?php require 'pagenatormain.php'; ?>
-<footer style="width: 100%;
-    height: 50px;
-    background: #c41af0;
-    margin-bottom: 0px;
-    transform: translateY(21px);">
-    <h5 style="padding-top: 15px">©2020 of Work</h5>
-</footer>
+<?php require "footer.php"; ?>
 <?php //require 'footer.php'; ?>
 

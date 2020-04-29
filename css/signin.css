@@ -68,11 +68,17 @@ button:active::before{
 }
 #reset{
     position: fixed;
+    z-index: -3;
     color: #d007b7;
     bottom: 60px;
     border: 2px solid #d64bd4;
     border-radius: 15px;
     padding: 0px 5px 2px;
+}
+@media screen and (max-height: 510px){
+    #reset{
+        display: none;
+    }
 }
 @media screen and (min-width: 600px) {
     html {

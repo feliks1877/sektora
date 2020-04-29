@@ -113,7 +113,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
                 <div class="">
                     <label for="web"><h5>Укажите Ваш сайт</h5></label>
-                    <input type="text" class="address" id="web" name="web"placeholder="Укажите свой сайт или аккаунт в соцсетях" required>
+                    <input type="text" class="address" id="web" name="web"placeholder="Укажите свой сайт или аккаунт в соцсетях">
                 </div>
                 <div class="">
                     <label for="insta"><h5>Укажите Ваш Instagram</h5></label>

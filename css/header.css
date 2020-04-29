@@ -72,7 +72,7 @@ div.submenu{
     height: 900px;
     margin-top: 70px;
     margin-left: -100%;
-    max-width: 230px;
+    max-width: 235px;
     transition: 1s;
     /*box-shadow: 5px -1px 5px 0px black,inset -1px 1px 2px 0px #fffafe,inset -1px 1px 3px 1px #9fa1f1;*/
     background: #c41af0;
@@ -82,7 +82,6 @@ div.submenu{
 }
 
 #sub:checked~div.submenu{
-	
     margin-left: 0%;
     transition: 0.5s;
 }
@@ -115,7 +114,7 @@ div.submenu{
     padding-top: 10px;
     padding-bottom: 10px;
     margin-left: -40px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     list-style-type: none;
 }
 .menu:first-child{
@@ -130,3 +129,15 @@ div.submenu{
     width: 15px;
     height: 15px;
 }
+/*@media screen and (min-width: 641px) {*/
+    /*header{*/
+        /*position: fixed;*/
+        /*top: 0;*/
+        /*z-index: 1;*/
+    /*}*/
+    /*div.submenu{*/
+        /*min-height: 1500px;*/
+        /*margin-left: 0%;*/
+        /*position: fixed;*/
+    /*}*/
+/*}*/

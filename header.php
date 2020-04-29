@@ -12,7 +12,13 @@ require 'core.php';
     <link rel="stylesheet" href="css/header.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/lk.js"></script>
-    <title>Header</title>
+
+    <?php
+    if(isset($_GET['main.php']) == TRUE){
+        echo "попал в иф";
+       echo "<title>Объявления</title>";
+    };
+    ?>
 </head>
 <body>
 <header>

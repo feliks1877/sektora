@@ -22,10 +22,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <input type="text" class="" id="email" name="email" placeholder="Введите email для обратной связи" required>
 
             <label for="address"><h5>Введите текст</h5></label>
-            <textarea class="address" name="message" id="message" cols="20" rows="5"
+            <textarea class="address" name="message" id="message" cols="20" rows="10"
                       placeholder="Введите текст Вашего обращения" required></textarea><br>
-            <button type="submit" id="submit" value="Отрпавить"><h6 id="send" style="margin-top: 6px">Отправить</h6></button>
+            <button type="submit" id="submit" value="Отрпавить"><span id="send" style="margin-top: 6px;
+                             color: yellow">Отправить</span></button>
         </form>
     </div>
 </div>
-<?php require 'footer.php'; ?>
+<?php require 'footerfixed.php'; ?>

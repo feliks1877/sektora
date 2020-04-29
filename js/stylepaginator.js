@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded",function () {
     console.log(page);
     let links = list.getElementsByClassName("pagin");
     links[page].style.color='yellow';
-    links[page].style.border='3px solid #ce59f7';
+    links[page].style.border='1px solid #ce59f7';
     // var list = document.getElementById("list");
     // var pagin = list.getElementsByClassName("pagin");
     // for (var i = 0; i < pagin.length; i++) {

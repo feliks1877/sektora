@@ -15,7 +15,7 @@
     }
     for ($i = 1; $i <= $total / $adsAmount + 25; $i++) {
 
-        echo "<li class='pagin'><a href='main.php?page=$i$typeIdText'>$i</a></li> ";
+        echo "<a href='main.php?page=$i$typeIdText'><li class='pagin'><a href='main.php?page=$i$typeIdText'>$i</a></li></a> ";
 
     }
     echo "</ol>";
@@ -23,13 +23,14 @@
     $page = isset($_GET['page'])?$_GET['page']:1;
     ?>
 </div>
+<link rel="stylesheet" href="css/mainstyle.css">
 
-<a href="main.php?page=<?php echo ($page-1 > 0?$page-1:1).$typeIdText?>">
-    <img src="photo/strelkal.png" alt="" style="position: absolute;height: 38px;left: 5px;
-z-index: 1;filter: drop-shadow(1px 1px 2px black);"></a>
+<a  href="main.php?page=<?php echo ($page-1 > 0?$page-1:1).$typeIdText?>">
+    <img id="strelkal" src="photo/strelkal.png" alt="" style="position: absolute;height: 38px;left: 5px;
+z-index: 1;filter: drop-shadow(1px 1px 2px black); margin-top: -42px;"></a>
 
 <a href="main.php?page=<?php echo ($page+1).$typeIdText?>">
     <img src="photo/strelkar.png" alt="" style="position: absolute;height: 38px; right: 5px;
-z-index: 1;filter: drop-shadow(1px 1px 2px black);margin-top: 1px;"></a>
+z-index: 1;filter: drop-shadow(1px 1px 2px black);margin-top: -43px;"></a>
 
 <script src="js/stylepaginator.js"></script>
