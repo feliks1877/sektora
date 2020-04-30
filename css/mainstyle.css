@@ -135,7 +135,7 @@ a.sulka {
 }
 
 #disk {
-    overflow: hidden;
+    overflow: scroll;
     text-align: center;
     color: black;
     text-shadow: none;
@@ -148,7 +148,9 @@ a.sulka {
     padding-bottom: 3px;
     border-bottom: 1px solid black;
 }
-
+#disk::-webkit-scrollbar {
+    width: 0;
+}
 .tel {
     /*border: 1px solid black;*/
     height: 16px;
@@ -181,7 +183,7 @@ a.sulka {
     display: flex;
     overflow: scroll;
     width: 77%;
-    bottom: -22px;
+    bottom: -12px;
     position: absolute;
     margin-left: 40px;
 }
@@ -242,10 +244,6 @@ a.sulka {
     font-family: 'Comfortaa', cursive;
     text-decoration: none;
 
-}
-
-.blockpage::-webkit-scrollbar {
-    width: 0;
 }
 
 .active {

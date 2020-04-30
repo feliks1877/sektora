@@ -52,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $photo .= basename($_FILES["newphoto"]["name"][$i]);
         $photo .= ";";
         if ($tmpFilePath != "") {
-            $newFilePath = "./photo/" . $_FILES['newphoto']['name'][$i];
+            $newFilePath = "./photoads/" . $_FILES['newphoto']['name'][$i];
             move_uploaded_file($tmpFilePath, $newFilePath);
         }
     }

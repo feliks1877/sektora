@@ -73,7 +73,7 @@ $_SESSION['timeout'] = time();
                 <div class="numbertext"></div>
                 <?php
                 $photo = $p[$i];
-                echo "<img style='width:100%' src='$domen/photo/$photo'>"; ?>'
+                echo "<img style='width:100%' src='$domen/photoads/$photo'>"; ?>'
                 <div class="text"></div>
 
             </div>

@@ -32,8 +32,8 @@ require 'header.php';
                 echo "<div class='object'><a class='sulka' href='details.php?objectId=$objectId'>";
 
                 $photo1 = explode(';', $row['photo'])[0];
-                echo "<div class='izob' style='background: url(photo/$photo1); background-size: 25px;'>";
-                echo "<img class='photoobject' src='photo/$photo1'>";
+                echo "<div class='izob' style='background: url(photoads/$photo1); background-size: 25px;'>";
+                echo "<img class='photoobject' src='photoads/$photo1'>";
                 echo "</div>";
                 echo "<div class='disc' id='disk'>";
                 echo "" . $row["name"];

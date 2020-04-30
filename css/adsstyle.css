@@ -1,17 +1,16 @@
 body{
     margin: 0;
     background: linear-gradient(3rad, #8012aa, #D8F800) no-repeat;
-    background-position: 100%;
-    height: 100%;
-	
+    background-size: 2575px 2335px;
 }
 .container{
 	text-shadow: 1px 1px 1px black;
 	display: flex;
 	flex-direction: column;
+    align-items: center;
 	justify-content: space-around;
     padding: 9px;
-	text-shadow: 1px 1px 1px black;
+    /*border: 2px solid aqua;*/
 }
 .ads{
     /*border: 2px solid aqua;*/

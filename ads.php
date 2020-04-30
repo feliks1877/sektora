@@ -4,10 +4,32 @@ if (!isset($_SESSION['clientId'])) {
 header("Location: $domen/signin.php");
 }
 require'header.php';
-?>
+function compressImage($source, $destination, $quality) {
+    // Get image info
+    $imgInfo = getimagesize($source);
+    $mime = $imgInfo['mime'];
 
-<link rel="stylesheet" href="css/adsstyle.css">
-<?php
+    // Create a new image from file
+    switch($mime){
+        case 'image/jpeg':
+            $image = imagecreatefromjpeg($source);
+            break;
+        case 'image/png':
+            $image = imagecreatefrompng($source);
+            break;
+        case 'image/gif':
+            $image = imagecreatefromgif($source);
+            break;
+        default:
+            $image = imagecreatefromjpeg($source);
+    }
+
+    // Save image
+    imagejpeg($image, $destination, $quality);
+
+    // Return compressed image
+    return $destination;
+}
 
 //   проверяем пришли ли данные с формы
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -49,18 +71,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     for ($i = 0; $i < $total; $i++) {
         $tmpFilePath = $_FILES['photo']['tmp_name'][$i];
         if ($tmpFilePath != "") {
-            $newFilePath = "./photo/" . $_FILES['photo']['name'][$i];
-            move_uploaded_file($tmpFilePath, $newFilePath);
+            $newFilePath = "./photoads/" . $_FILES['photo']['name'][$i];
+            $compressedImage = compressImage($tmpFilePath, $newFilePath, 30);
+            if($compressedImage){
+                echo "Сохранили";
+            }else{
+                echo "Всё сломалось";
+            }
         }
     }
-//    $target_dir = "photo/";
-//    $target_file = $target_dir . basename($_FILES["photo"]["name"]);
-//    if (move_uploaded_file($_FILES["photo"]["tmp_name"], $target_file)) {
-//        echo "фаил " . basename($_FILES["photo"]["name"]) . " сохранен.";
-//    } else {
-//        echo "Ошибка сохранения";
-//    }
-//    move_uploaded_file($_FILES["photo1"]["tmp_name"], $target_dir . basename($_FILES["photo1"]["name"]));
 
 
 }

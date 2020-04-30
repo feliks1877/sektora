@@ -27,7 +27,7 @@ if($objectId != ""){
     <div  class="baner">
         <p id="namebaner"><?php echo $name ?></p>
     <p id="textbaner"><?php echo $tel ?></p>
-    <img id="banerimg" src="photo/<?php echo $photo1;?>">
+    <img id="banerimg" src="photoads/<?php echo $photo1;?>">
     </div>
     </a>
 <?php

@@ -27,22 +27,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conn->close();
 }
 ?>
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/signin.css">
-    <title>Авторизация</title>
-</head>
-<body>
 <?php
-require('header.php');
+require 'header.php';
 ?>
 <div class="signin">
-    <form method="post" action="signin.php">
+    <form id="signin_form" method="post" action="signin.php">
         <label for="exampleInputEmail1"><h5>Введите Ваш Email</h5></label>
         <input type="email" name="email" class="inp1" id="exampleInputEmail1" placeholder="Ваш email"
                autocomplete="off" required>
@@ -54,7 +43,6 @@ require('header.php');
         <button type="submit" class="btn" value="Продолжить"><span>Войти</span></button><br>
 
     </form>
-
     <a href="<?php echo $domen ?>/signup.php"><button type="" class="btn" value="Регистрация"><span>Регистрация</span></button></a>
 
 </div>

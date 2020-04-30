@@ -1,50 +1,47 @@
 <?php session_start();
 require 'core.php';
 require 'header.php';
-//проверка,если не выбран город
-//if (!isset($_GET['cityId'])&&!isset($_SESSION['cityId'])){
-//   	header("Location: $domen");
-//}
+
 ?>
-<link rel="stylesheet" href="css/mainstyle.css">
 <div id="mainzagolovok">
-<?php
-require 'connectdb.php';
-$typeId = isset($_GET['typeId']) ? $_GET['typeId'] : '';
-if ($typeId == "") {
-    echo '<br><h4>Вы смотрите все объявления</h4>';
-} else if ($typeId == 7) {
-    echo '<br><h4>Лучшие салоны красоты</h4>';
-} else if ($typeId == 6) {
-    echo '<br><h5>Самые опытные мастера по уходу за своей внешностью</h5>';
-} else if ($typeId == 3) {
-    echo '<br><h4>Мастера массажа и релакса</h4>';
-} else if ($typeId == 2) {
-    echo '<br><h5>Лучшие Спа-центры и места для Вашего релакса</h5>';
-} else if ($typeId == 4) {
-    echo '<br><h4>Лучшие Barbershop и парикмахерские</h4>';
-} else if ($typeId == 1) {
-    echo '<br><h4>Лучшие сауны и баные комплексы</h4>';
-}
-//определяем cityId
-$cityId = "";
-if (isset($_GET['cityId'])) $cityId = $_GET['cityId'];
-else if (isset($_SESSION['cityId'])) $cityId = $_SESSION['cityId'];
-else {
-    die('<h5>Город не выбран<br></h5><a href="index.php"><em><h3 style="border: 2px solid yellow;
+    <?php
+    require 'connectdb.php';
+    $typeId = isset($_GET['typeId']) ? $_GET['typeId'] : '';
+    if ($typeId == "") {
+        echo '<br><h4>Вы смотрите все объявления</h4>';
+    } else if ($typeId == 7) {
+        echo '<br><h4>Лучшие салоны красоты</h4>';
+    } else if ($typeId == 6) {
+        echo '<br><h5>Самые опытные мастера по уходу за своей внешностью</h5>';
+    } else if ($typeId == 3) {
+        echo '<br><h4>Мастера массажа и релакса</h4>';
+    } else if ($typeId == 2) {
+        echo '<br><h5>Лучшие Спа-центры и места для Вашего релакса</h5>';
+    } else if ($typeId == 4) {
+        echo '<br><h4>Лучшие Barbershop и парикмахерские</h4>';
+    } else if ($typeId == 1) {
+        echo '<br><h4>Лучшие сауны и баные комплексы</h4>';
+    };
+    //определяем cityId
+    $cityId = "";
+    //проверка,если не выбран город
+    if (isset($_GET['cityId'])) $cityId = $_GET['cityId'];
+    else if (isset($_SESSION['cityId'])) $cityId = $_SESSION['cityId'];
+    else {
+        die('<h5>Город не выбран<br></h5><a href="index.php"><em><h3 style="border: 2px solid yellow;
           border-radius: 15px; color: lightyellow;">→ Сначала выберите город</h3></em></a>');
-}
+    }
 
-if ($cityId != "") {
+    if ($cityId != "") {
 
-    $sql = "SELECT * FROM city where cityId = $cityId ";
-    $result = $conn->query($sql);
-    $row = $result->fetch_assoc();
-    $city = $row['name'];
-    echo "<h4>$city</h4>";
-}
+        $sql = "SELECT * FROM city where cityId = $cityId ";
+        $result = $conn->query($sql);
+        $row = $result->fetch_assoc();
+        $city = $row['name'];
+        echo "<h4>$city</h4>";
+    }
 
-?>
+    ?>
 </div>
 <?php
 require 'banermain.php';
@@ -93,8 +90,8 @@ require 'banermain.php';
             echo "<div class='object'><a class='sulka' href='details.php?objectId=$objectId'>";
 
             $photo1 = explode(';', $row['photo'])[0];
-            echo "<div class='izob' style='background: url(photo/$photo1); background-size: 25px;'>";
-            echo "<img class='photoobject' src='photo/$photo1'>";
+            echo "<div class='izob' style='background: url(photoads/$photo1); background-size: 25px;'>";
+            echo "<img class='photoobject' src='photoads/$photo1'>";
             echo "</div>";
             echo "<div class='disc' id='disk'>";
             echo "" . $row["name"];
