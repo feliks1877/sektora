@@ -4,7 +4,7 @@ body{
     justify-content: space-around;
     margin: 0;
     background: linear-gradient(3rad, #8012aa, #D8F800) no-repeat;
-    height: 1000px;
+    background-size: 1500px 2000px;
 	text-align: center;
 }
 div.container{

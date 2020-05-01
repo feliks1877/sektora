@@ -26,6 +26,8 @@ if ($_SESSION['login'] == 1) {
     echo 'Или <a href=\'signin.php\'>Войти</a> <br>';
 }
 ?>
+    <a href="price.php">Условия размещения</a><br>
+    <br>
 <a href="payhistory.php">История платежей</a>
 <?php
 $clientId = $_SESSION['clientId'];

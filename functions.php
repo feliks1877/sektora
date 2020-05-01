@@ -25,7 +25,7 @@ function anticlick($objectId,$clientId){
     $result = $conn->query($sql);
 	$row = $result->fetch_assoc();
 	$total = (int)$row['total'];
-	echo "total = $total";
+//	echo "total = $total";
 
 
 	if($isFound==false && $total <= 50){

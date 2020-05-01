@@ -28,7 +28,7 @@ $inv_id = $_SESSION['clientId'];;
 
 // описание заказа
 // order description
-$inv_desc = "тестовый платеж";
+$inv_desc = "платеж";
 
 // сумма заказа
 // sum of order

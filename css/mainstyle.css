@@ -42,7 +42,6 @@ body {
     margin-left: -30px;
     list-style-type: none;
 }
-
 /*банер*/
 .baner {
     overflow: scroll;
@@ -89,7 +88,6 @@ body {
     font-size: 11px;
     /*border: 2px solid aqua;*/
     color: white;
-    /*text-shadow: 1px 1px 2px black;*/
     margin: 1% 1%;
     padding-right: 3px;
 }
@@ -187,7 +185,6 @@ a.sulka {
     position: absolute;
     margin-left: 40px;
 }
-
 /*листалка*/
 #list {
     list-style-type: none;
@@ -203,17 +200,6 @@ a.sulka {
 #list a:nth-child(-n+25){
 
     color: white;
-}
-#list > li:nth-of-type(-n+9){
-    /*width: 14px;*/
-    /*padding-left: 10px;*/
-    /*padding-top: 1px;*/
-    /*height: 22px;*/
-}
-#list > li:not(:nth-of-type(-n+9)){
-    /*padding-left: 8px;*/
-    /*padding-top: 1px;*/
-    /*border: 1px solid aqua;*/
 }
 
 /*элементы листалки*/
@@ -270,10 +256,9 @@ body::-webkit-scrollbar {
     .baner {
         position: relative;
         overflow: visible;
-        width: 100%;
+        min-width: 600px;
         height: 170px;
     }
-
     .main {
         display: flex;
     }
@@ -287,7 +272,10 @@ body::-webkit-scrollbar {
     #spisok #element {
         margin: 10px;
     }
-
+    #element:last-child{
+        /*border: 2px solid aqua;*/
+        margin-bottom: 90px;
+    }
     .object {
         overflow: visible;
     }
@@ -300,31 +288,19 @@ body::-webkit-scrollbar {
     }
 
     #textbaner {
-        margin: 140px 59%;
+        margin: 140px 62%;
         width: 150px;
         height: 16px;
         border-radius: 25px;
         padding-top: 5px;
     }
-
-    #strelkal {
-
-    }
-
-    /*.blockpage{*/
-    /*overflow-x: scroll;*/
-    /*width: 74%;*/
-    /*margin-left: 0%;*/
-    /*}*/
     .blockpage::-webkit-scrollbar {
         width: 0;
     }
-    .blockpage{
-        margin-left: 3px;
+    .name::-webkit-scrollbar {
+        width: 0;
     }
-    /*#list{*/
-    /*margin-left: 100px;*/
-    /*}*/
+
 }
 
 

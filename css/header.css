@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Russo+One&display=swap');
 .active{
     background-color: #4d4bff;
-    background-color: greenyellow;
 }
 .iconlk {
     filter: drop-shadow(1px 3px 8px #ffffff);
@@ -69,7 +68,7 @@ div.submenu{
     position: absolute;
 	z-index: 5; 
     overflow: hidden;
-    height: 900px;
+    min-height: 900px;
     margin-top: 70px;
     margin-left: -100%;
     max-width: 235px;

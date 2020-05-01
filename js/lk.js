@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded",function () {
         let objectId=$(this).attr('objectId');
 		console.log(objectId);
         $.post( "ajax/baner.php", { objectId: objectId } );
-        alert('Вы доабили объявление в банер' + objectId);
+        alert('Вы добавили объявление в банер №' + objectId);
     })
 });
 

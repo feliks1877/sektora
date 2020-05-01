@@ -7,16 +7,18 @@
     width: 100%;
     /*border: 2px solid aqua;*/
 }
-@media screen and (max-width: 599px) {
+
+@media screen and (max-width: 640px) {
     body {
         margin: 0px;
+        background: linear-gradient(95rad, #fceb24, #c41df1);
+        background-size: 600px 1500px;
     }
     .detail {
         position: relative;
         margin: 0px;
         font-family: 'Baloo Da 2', cursive;
         font-family: 'Comfortaa', cursive;
-        background: linear-gradient(95rad, #fceb24, #c41df1);
         /*background: #f6d0fa;*/
     }
 
@@ -116,7 +118,6 @@
 
     .next,
     .prev {
-        text-shadow: 2px 2px 2px white;
         font-size: 30px;
         top: 30%;
         color: rgba(255, 230, 73, 0.96);
@@ -130,15 +131,20 @@
         transition: 0.7s;
     }
 }
-@media screen and (min-width: 600px) {
-    .detail {
+@media screen and (min-width: 641px) {
+    body{
         margin: 0px;
+    }
+    html{
+        background: linear-gradient(95rad, #fceb24, #c41df1);
+        background-size: 1500px 1500px;
+    }
+    .detail {
+        position: relative;
         font-family: 'Baloo Da 2', cursive;
         font-family: 'Comfortaa', cursive;
-        background: linear-gradient(95rad, #fceb24, #c41df1);
         /*background: #f6d0fa;*/
     }
-
     .name{
         /*border: 2px solid #e64343;*/
         font-size: 20px;
@@ -150,7 +156,7 @@
 		padding-bottom: 20px;
     }
 
-    #disk {		
+    #disk {
 		overflow: hidden;
 		scroll-behavior: auto;
         box-shadow: #060205 0 0 10px 2px, inset 0 0 10px 3px;
@@ -192,13 +198,12 @@
     }
      #web{
 		border-radius: 15px;
-        padding: 5px;
+        padding: 6px 10px;
         color: #D8F800;
-		margin-left: 89%;
-		margin-top: 5px;
+		/*margin-left: 89%;*/
 		border: 2px solid yellow;
     }
- 
+
 	a{
 		text-decoration: none;
 		text-shadow: none;
@@ -208,11 +213,11 @@
         border: 2px solid yellow;
         border-radius: 15px;
         text-align: center;
-        margin-top: 25px;
 		max-height: 400px;
 		max-width: 600px;
+        margin-top: 35px;
         margin-bottom: 150px;
-		margin-left: 25%;
+		margin-left: 21%;
 		margin-right: 15%;
     }
 
@@ -233,10 +238,8 @@
     .prev {
         top: 35%;
     }
-
     .next,
     .prev {
-        text-shadow: 2px 2px 2px white;
         font-size: 30px;
         top: 30%;
         color: rgba(255, 230, 73, 0.96);
@@ -244,9 +247,17 @@
     }
 
     .prev:hover, .next:hover {
-        text-shadow: #060205 2px 2px 4px, rgba(6, 2, 5, 0.95) -1px -1px 2px;
         font-size: 50px;
         color: #ffe649;
         transition: 0.7s;
+    }
+    .social{
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        bottom: 20px;
+        width: 100%;
+        /*border: 2px solid aqua;*/
     }
 }

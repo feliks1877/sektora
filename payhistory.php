@@ -24,7 +24,7 @@ if (!isset($_SESSION['clientId'])){
 require 'connectdb.php';
 
 $clientId = $_SESSION['clientId'];
-echo $clientId;
+echo "<h4>История платежей</h4>";
 $sql = "SELECT * FROM payhistory WHERE clientId = $clientId order by date desc";
 $result=$conn->query($sql);
 $row = $result->fetch_assoc();
@@ -40,7 +40,7 @@ while ($row = $result->fetch_assoc()) {
     echo "<br>Услуга:  " . $row["operation"];
 	echo "<br>Текущий баланс:  " . $row["balance"] . "руб.";
     echo "<br>Дата списания:  " . $row["date"];
-    echo "<br>№ОПЕРАЦИИ:  " . $row["pay_id"];
+//    echo "<br>№ОПЕРАЦИИ:  " . $row["pay_id"];
   
     echo "</div>";
 }

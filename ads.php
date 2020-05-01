@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $cityId = $_POST["cityId"];
     $name = $_POST["name"];
     $date = date("d.m.y h:m:s");
-    echo date("d.m.y h:m:s");
+//    echo date("d.m.y h:m:s");
     $description = $_POST["description"];
     $web = $_POST["web"];
     $insta = $_POST["insta"];
@@ -62,7 +62,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($conn->query($sql) === TRUE) {
         echo "<h4>Объявлениe успешно добавлено<br>Спасибо что выбрали нас</h4>";
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+//        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo "ВЫ ЗАБЫЛИ АВТОРИЗОВАТЬСЯ";
     }
     $conn->close();
     //сохранение фото
@@ -74,7 +75,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $newFilePath = "./photoads/" . $_FILES['photo']['name'][$i];
             $compressedImage = compressImage($tmpFilePath, $newFilePath, 30);
             if($compressedImage){
-                echo "Сохранили";
+
             }else{
                 echo "Всё сломалось";
             }
@@ -147,7 +148,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <label for="telephone"><h5 class="tele">Добавить телефон</h5></label>
                 <div class="tel">
                     <input type="text" name="telephone" id="telephone" placeholder="Ваш номер телефона"
-                          pattern="+7\([0-9]{3})[0-9]{3}-[0-9]{2}-[0-9]{2}" maxlength="11" required>
+                          pattern="+7\([0-9]{3})[0-9]{3}-[0-9]{2}-[0-9]{2}" maxlength="12" required>
                 </div>
                 <button class="adsbtn" type="submit" value='Добавить' style="width: 130px; margin-left: 32%"><p>Добавить</p></button>
             </div>

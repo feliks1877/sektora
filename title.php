@@ -2,9 +2,20 @@
 //    echo basename($_SERVER['PHP_SELF']);
 $pagename = basename($_SERVER['PHP_SELF']);
 if($pagename == 'main.php'){
-    echo '
-   <link rel="stylesheet" href="css/mainstyle.css">
-   <title>Объявления</title>';
+   echo '<link rel="stylesheet" href="css/mainstyle.css">';
+
+    $typeId = isset($_GET['typeId'])?$_GET['typeId']:'';
+    if($typeId = ''){
+        echo "<title>Здесь Вы сможете найти лучшие Салоны красоты, Спа, 
+                     Мастеров по уходу за своей внешностью, 
+                     Мастеров массажа и Барбершопы</title>";
+    }
+    else if($typeId == 1){
+        echo "<title>Самый удобный поиск саун и бань в вашем городе</title>";
+        echo '<meta name="description" content="В этом каталоге представлены сауны. На ваш выбор - заведения, 
+                                                     где можно устроить отдых на любой вкус" />';
+    }
+
 }
 else if($pagename == 'lk.php'){
     echo "<title>Личный кабинет</title>";

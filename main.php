@@ -98,7 +98,7 @@ require 'banermain.php';
             echo "</div>";
             echo "<div class='address'>";
             echo "" . $row["address"];
-            echo "" . $row["objectId"];
+//            echo "" . $row["objectId"];
             echo "</div>";
             echo "<div class='tel'>";
             echo "" . $row["telephone"];
@@ -114,5 +114,5 @@ require 'banermain.php';
 
 <?php require 'pagenatormain.php'; ?>
 <?php require "footer.php"; ?>
-<?php //require 'footer.php'; ?>
+
 

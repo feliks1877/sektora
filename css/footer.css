@@ -3,7 +3,7 @@ footer {
     height: 65px;
     background: #c41af0;
     position: absolute;
-    bottom: -65px;
+    bottom: -90px;
     right: 0;
     z-index: -3;
 }
@@ -19,5 +19,12 @@ h1, h2, h3, h4, h5, h6, p{
 @media screen and (max-height: 600px){
     footer{
         display: none;
+        bottom: 0px;
     }
 }
+@media screen and (min-height: 1000px){
+    footer{
+        bottom: -140px;
+    }
+}
+

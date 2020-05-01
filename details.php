@@ -16,7 +16,7 @@ $_SESSION['timeout'] = time();
 ?>
 
 <link rel="stylesheet" href="css/galery.css">
-
+<body>
 <div class="detail">
 
     <div>
@@ -47,7 +47,7 @@ $_SESSION['timeout'] = time();
 
         <?php
         echo "<div style='font-size: 15px; float: right; margin-right: 10px; margin-top: 10px;'>";
-        echo "" . $row["date"];
+//        echo "" . $row["date"];
         echo "</div> <br>";
         echo "<div class='name' id=''>";
         echo "" . $row["name"];
@@ -93,8 +93,12 @@ $_SESSION['timeout'] = time();
 <!--    height: 42px;-->
 <!--    margin-left: -10px;-->
 <!--    padding-top: 3px;">-->
+
     </div>
 
-    <?php require 'footer.php'; ?>
+
     <script src="js/slide.js"></script>
 </div>
+<?php require 'footer.php'; ?>
+</body>
+</html>
