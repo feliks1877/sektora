@@ -2,7 +2,7 @@
 
 // регистрационная информация (пароль #2)
 // registration info (password #2)
-$mrh_pass2 = "CpIKCSw2";
+$mrh_pass2 = "e5N1VsS1gj8I9tkgTqyF";
 
 //установка текущего времени
 //current date
@@ -33,18 +33,10 @@ if ($my_crc !=$crc)
 // success
 echo "OK$inv_id\n";
 
-$servername = "localhost";
-$username = "u0893076_u098716";
-$password = "zkIUpBDL9E4ZXJYAkv";
-$dbname = "u0893076_spav";
+require 'core.php';
+require 'connectdb.php';
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed:" . $conn->connect_error);
-}
-$clientId = $inv_id;
+$clientId = $_REQUEST['Shp_item'];
 $sql="update clients set balance=balance+$out_summ where clientId=$clientId";
 $conn->query($sql); 
 $conn->close();

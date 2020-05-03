@@ -35,6 +35,7 @@
     <noscript><div><img src="https://mc.yandex.ru/watch/62469496" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
     <link rel="stylesheet" href="css/indexstyle.css">
+    <link rel="icon" type="image/png" href="favicon.png" />
     <title>Выбрать город</title>
 </head>
 <body>

@@ -13,7 +13,7 @@
 
 // регистрационная информация (пароль #1)
 // registration info (password #1)
-$mrh_pass1 = "p7vpVdo7";
+$mrh_pass1 = "GQzvyeR23fPPsJD99HT6";
 
 // чтение параметров
 // read parameters

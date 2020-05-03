@@ -44,36 +44,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $web = $_POST["web"];
     $insta = $_POST["insta"];
     $total = count($_FILES['photo']['name']);
+
+    //сохранение фото
     $photo = "";
     for ($i = 0; $i < $total; $i++) {
-        $photo .= basename($_FILES["photo"]["name"][$i]);
-        $photo .= ";";
-    }
-//    $photo = basename($_FILES["photo"]["name"]) . ";" .
-//        basename($_FILES["photo"]["name"]) . ";" .
-//        basename($_FILES["photo"]["name"]) . ";" .
-//        basename($_FILES["photo"]["name"]) . ";";
-    $clientId = $_SESSION['clientId'];
-    require 'connectdb.php';
-//    echo $clientId . "<br>" . $typeId . "<br>" . $address . "<br>" . $telephone . "<br>" . $cityId . "<br>" . $description . "<br>" . $photo . "<br>" .$date ."<br>";
-    $sql = "INSERT INTO objects VALUES (null," . $clientId . " , " . $typeId . " , '" . $address . "','" . $telephone .
-        "'," . $cityId . ",'" . $name . "','" . $description . "','" . $web . "','" .$insta . "','" . $photo . "',0,'". $date ."',1,0)";
-//  echo "<pre>".$sql."</pre>";
-    if ($conn->query($sql) === TRUE) {
-        echo "<h4>Объявлениe успешно добавлено<br>Спасибо что выбрали нас</h4>";
-    } else {
-//        echo "Error: " . $sql . "<br>" . $conn->error;
-        echo "ВЫ ЗАБЫЛИ АВТОРИЗОВАТЬСЯ";
-    }
-    $conn->close();
-    //сохранение фото
-    $total = count($_FILES['photo']['name']);
-
-    for ($i = 0; $i < $total; $i++) {
         $tmpFilePath = $_FILES['photo']['tmp_name'][$i];
+        $imgInfo = getimagesize($tmpFilePath);
+        $mime = $imgInfo['mime'];
         if ($tmpFilePath != "") {
-            $newFilePath = "./photoads/" . $_FILES['photo']['name'][$i];
+//            $newFilePath = "./photoads/" . $_FILES['photo']['name'][$i];
+            $uniqPhotoName = $_SESSION['clientId'] . "_" . substr(md5(time() + $i), 0,4);
+            if($mime == 'image/jpeg'){
+                $uniqPhotoName .= '.jpg';
+            }
+            if($mime == 'image/png'){
+                $uniqPhotoName .= '.png';
+            }
+            $photo .= $uniqPhotoName . ";";
+            $newFilePath = "./photoads/" . $uniqPhotoName;
             $compressedImage = compressImage($tmpFilePath, $newFilePath, 30);
+
             if($compressedImage){
 
             }else{
@@ -82,14 +72,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 
-
+//    for ($i = 0; $i < $total; $i++) {
+//        $photo .= basename($_FILES["photo"]["name"][$i]);
+//        $photo .= ";";
+//    }
+    $clientId = $_SESSION['clientId'];
+    require 'connectdb.php';
+    $sql = "INSERT INTO objects VALUES (null," . $clientId . " , " . $typeId . " , '" . $address . "','" . $telephone .
+        "'," . $cityId . ",'" . $name . "','" . $description . "','" . $web . "','" .$insta . "','" . $photo . "',0,'". $date ."',1,0)";
+    if ($conn->query($sql) === TRUE) {
+        echo "<h4>Объявлениe успешно добавлено<br>Спасибо что выбрали нас</h4>";
+    } else {
+//        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo "ВЫ ЗАБЫЛИ АВТОРИЗОВАТЬСЯ";
+    }
+    $conn->close();
 }
 ?>
 
 <div class="container">
     <div class="ads">
         <form method="post" action="ads.php" enctype="multipart/form-data">
-            <h1>Добавить оъявление</h1>
+            <h1 style="font-size: large;">Добавить оъявление</h1>
             <div class="">
                 <label for="cytiId"><h5>Выберите город</h5></label>
                 <select class="section" name="cityId" id="cityId" required>

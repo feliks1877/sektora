@@ -94,7 +94,7 @@ echo "</h4></div>";
 
 echo "<div id='opads'>";
 echo "<button>";
-echo "<a href='oplata.php'><span>Пополнить</span></a>";
+echo "<a href='pay_form.php'><span>Пополнить</span></a>";
 echo "</button>";
 echo "<button class='adsbtn'>";
 echo "<a href='ads.php'><span>Добавить</span></a>";

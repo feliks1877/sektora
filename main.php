@@ -3,24 +3,24 @@ require 'core.php';
 require 'header.php';
 
 ?>
-<div id="mainzagolovok">
+<div id="mainzagolovok" style="padding: 1px">
     <?php
     require 'connectdb.php';
     $typeId = isset($_GET['typeId']) ? $_GET['typeId'] : '';
     if ($typeId == "") {
-        echo '<br><h4>Вы смотрите все объявления</h4>';
+        echo '<br><h1 style="font-size: large;">Вы смотрите все объявления</h1>';
     } else if ($typeId == 7) {
-        echo '<br><h4>Лучшие салоны красоты</h4>';
+        echo '<br><h1 style="font-size: large;">Лучшие салоны красоты</h1>';
     } else if ($typeId == 6) {
-        echo '<br><h5>Самые опытные мастера по уходу за своей внешностью</h5>';
+        echo '<br><h1 style="font-size: medium;">Самые опытные мастера маникюра, педикюра,визажисты.</h1>';
     } else if ($typeId == 3) {
-        echo '<br><h4>Мастера массажа и релакса</h4>';
+        echo '<br><h1 style="font-size: large;">Мастера массажа и релакса</h1>';
     } else if ($typeId == 2) {
-        echo '<br><h5>Лучшие Спа-центры и места для Вашего релакса</h5>';
+        echo '<br><h1 style="font-size: large;">Лучшие Спа-центры и места для Вашего релакса</h1>';
     } else if ($typeId == 4) {
-        echo '<br><h4>Лучшие Barbershop и парикмахерские</h4>';
+        echo '<br><h1 style="font-size: large;">Лучшие Barbershop и парикмахерские</h1>';
     } else if ($typeId == 1) {
-        echo '<br><h4>Лучшие сауны и баные комплексы</h4>';
+        echo '<br><h1 style="font-size: large;">Лучшие сауны и баные комплексы</h1>';
     };
     //определяем cityId
     $cityId = "";
